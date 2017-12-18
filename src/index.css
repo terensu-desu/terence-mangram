@@ -1,0 +1,130 @@
+/* 
+	site accent colors: #bc002d;
+	on hover: #FBB829;
+*/
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Didact Gothic", "Century Gothic";
+}
+
+/* General styling rules */
+span {
+	color: #990012;
+}
+
+a {
+	color: #000;
+	transition: .5s;
+}
+
+a:hover {
+	color: #FBB829 !important;
+}
+
+.accent {
+	color: #bc002d !important;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.card-panel {
+	padding: 12px 24px 12px 24px !important;
+}
+
+.no-margin-top {
+	margin-top: 0 !important;
+}
+
+.no-margin-bot {
+	margin-bottom: 0 !important;
+}
+
+/* Banner styling rules */
+.banner-image {
+	background: url(https://i.imgur.com/3VuMkuL.jpg?2) no-repeat center center;
+}
+
+.banner-image2 {
+	background: url(https://i.imgur.com/3VuMkuL.jpg?2) no-repeat center center;
+}
+
+.author-showcase {
+	margin-top: 20px;
+}
+
+.banner-text {
+	color: white;
+  text-shadow: -5px 5px 8px #000;
+}
+
+/* Home > About styling rules */
+.article {
+	white-space: pre-line;
+}
+
+.fa {
+	color: #990012;
+	transition: .5s;
+}
+
+.fa:hover {
+	color: #FBB829;
+}
+
+/* Sidebar styling rules */
+.sidebar-img {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+.sidebar-btn {
+  background-color: #990012;
+  margin: 60px 0 0;
+  padding-right: 12px !important;
+  position: absolute;
+  transition: .5s;
+}
+
+.sidebar-btn:hover, .sidebar-btn a:hover {
+	color: #FFF !important;
+	background-color: #FBB829;
+}
+
+.sidebar-profile a {
+  font-size: 1.5rem !important;
+  color: #fff !important;
+  text-shadow: 4px 4px 7px #000 !important;
+}
+
+.sidebar-header {
+	font-size: 1.8rem !important;
+  text-align: center;
+}
+
+.sidebar-link {
+	font-size: 1.2rem !important;
+  text-align: center;
+}
