@@ -1,18 +1,22 @@
 import React, { Component } from 'react';
 
-export default class Loading extends React.Component{
+export default class Loading extends Component{
 	render() {
 		return (
-			<div className="preloader-wrapper active">
-				<div className="spinner-layer spinner-red-only">
-					<div className="circle-clipper left">
-						<div className="circle"></div>
-					</div><div className="gap-patch">
-						<div className="circle"></div>
-					</div><div className="circle-clipper right">
-						<div className="circle"></div>
+			<div className="card-panel center">
+				<br/><br/>
+				<div className="preloader-wrapper active">
+					<div className="spinner-layer spinner-red-only">
+						<div className="circle-clipper left">
+							<div className="circle"></div>
+						</div><div className="gap-patch">
+							<div className="circle"></div>
+						</div><div className="circle-clipper right">
+							<div className="circle"></div>
+						</div>
 					</div>
 				</div>
+				<br/><br/>
 			</div>
 		)
 	}
