@@ -4,12 +4,13 @@ import { Link } from 'react-router-dom';
 export default class Sidebar extends Component {
 	constructor() {
 		super();
-		this.handleClick = this.handleClick.bind(this);
+		this.handleLanguageClick = this.handleLanguageClick.bind(this);
+    this.handleActiveLink = this.handleActiveLink.bind(this);
 	}
 
 	// onClick to handle passing the information to the prop to change the state
   // this handler will also hide the toggle which button is visible as well
-  handleClick(e, val) {
+  handleLanguageClick(e, val) {
       e.preventDefault();
       this.props.changeLanguage(val);
       if(val === "japanese") {
@@ -20,12 +21,29 @@ export default class Sidebar extends Component {
         document.getElementById("english-btn").classList.add("hidden")
       }
   }
+  handleActiveLink(e) {
+    e.preventDefault();
+    const userLocation = window.location.hash;
+    if(userLocation === "#/") {
+      document.getElementById("myBio").classList.add("active");
+      document.getElementById("myProjects").classList.remove("active");
+      document.getElementById("myApps").classList.remove("active");
+    }else if(userLocation === "#/projects") {
+      document.getElementById("myProjects").classList.add("active");
+      document.getElementById("myBio").classList.remove("active");
+      document.getElementById("myApps").classList.remove("active");
+    }else if(userLocation === "#/apps") {
+      document.getElementById("myApps").classList.add("active");
+      document.getElementById("myProjects").classList.remove("active");
+      document.getElementById("myBio").classList.remove("active");
+    }
+  }
 
   render() {
     return (
       <div>
       	<a data-target="slide-out" className="sidenav-trigger button-collapse btn sidebar-btn"><i className="material-icons">keyboard_arrow_right</i></a>
-        <ul id="slide-out" className="sidenav" role="nav">
+        <ul id="slide-out" className="sidenav">
         	<li>
         		<div className="user-view center sidebar-profile">
         			<div className="background yellow">
@@ -40,12 +58,19 @@ export default class Sidebar extends Component {
         			</div>
         			<a className="name">Terence Mangram</a>
         			<a className="email">tmangram@gmail.com</a>
-        			<a id="japanese-btn" className="sidenav-close" onClick={(e) => this.handleClick(e, "japanese")}>Switch to Japanese</a>
-              <a id="english-btn" className="sidenav-close hidden" onClick={(e) => this.handleClick(e, "english")}>Switch to English</a>
+        			<a id="japanese-btn" className="sidenav-close" onClick={(e) => this.handleLanguageClick(e, "japanese")}>Switch to Japanese</a>
+              <a id="english-btn" className="sidenav-close hidden" onClick={(e) => this.handleLanguageClick(e, "english")}>Switch to English</a>
         		</div>
         	</li>
-        	<li className="nav-li active sidebar-link sidenav-close"><Link to="/">About Myself<i className="material-icons accent right">home</i></Link></li>
-        	<li className="nav-li sidebar-link sidenav-close"><Link to="/projects">About My Projects<i className="material-icons accent right">video_library</i></Link></li>
+        	<li id="myBio" className="nav-li active sidebar-link sidenav-close" onClick={(e) => this.handleActiveLink(e)}>
+            <Link to="/">My Bio<i className="material-icons accent right">home</i></Link>
+          </li>
+        	<li id="myProjects" className="nav-li sidebar-link sidenav-close" onClick={(e) => this.handleActiveLink(e)}>
+            <Link to="/projects">My Projects<i className="material-icons accent right">video_library</i></Link>
+          </li>
+          <li id="myApps" className="nav-li sidebar-link sidenav-close" onClick={(e) => this.handleActiveLink(e)}>
+            <Link to="/apps">My Apps<i className="material-icons accent right">apps</i></Link>
+          </li>
         	<li className="nav-li"><div className="divider"></div></li>
         	<li><p className="sidebar-header">Projects</p></li>
         	<li className="nav-li"><a href="https://terensu-desu.github.io/nihon-alt/" className="waves-effect sidebar-link sidenav-close">NihonALT</a></li>
