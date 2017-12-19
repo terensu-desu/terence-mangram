@@ -14,6 +14,10 @@ export default class WeatherApp extends Component {
 		this.getWeatherData = this.getWeatherData.bind(this);
 	}
 
+	componentWillMount() {
+		this.getWeatherData()
+	}
+
 	getWeatherData() {
 		if(navigator.geolocation) {
 			navigator.geolocation.getCurrentPosition((position) => {
@@ -40,16 +44,6 @@ export default class WeatherApp extends Component {
 	}
 
 	render() {
-		return (
-			<div className="card-panel">
-				<div className="row">
-					{
-						this.state.loading 
-						? <div className="col s12"> <Loading /> </div>
-						: <Weather weatherData={this.state.weatherData} changeTempScale={this.changeTempScale} />
-					}
-				</div>
-			</div>
-		)
+		return this.state.loading ? <Loading /> : <Weather weatherData={this.state.weatherData} scale={this.state.metric} changeTempScale={this.changeTempScale} />
 	}
 }
