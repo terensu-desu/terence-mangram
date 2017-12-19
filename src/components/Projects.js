@@ -28,7 +28,7 @@ export default class Portfolio extends React.Component {
               <div className="col s12 m12 l4">
                <div className="card z-depth-2">
                   <div className="card-image video-container">
-                    <iframe title="" width="853" height="480" src={data.portfolio.item1.vlink} frameBorder="0" allowFullScreen></iframe>
+                    <iframe title="nihon-alt video" width="853" height="480" src={data.portfolio.item1.vlink} frameBorder="0" allowFullScreen></iframe>
                   </div>
                   <div className="card-content">
                     <h5 className="card-title">{data.portfolio.item1.title}</h5>
@@ -42,7 +42,7 @@ export default class Portfolio extends React.Component {
               <div className="col s12 m12 l4">
                <div className="card z-depth-2">
                   <div className="card-image video-container">
-                    <iframe title="" width="853" height="480" src={data.portfolio.item2.vlink} frameBorder="0" allowFullScreen></iframe>
+                    <iframe title="buddies video" width="853" height="480" src={data.portfolio.item2.vlink} frameBorder="0" allowFullScreen></iframe>
                   </div>
                   <div className="card-content">
                     <h5 className="card-title">{data.portfolio.item2.title}</h5>
@@ -56,7 +56,7 @@ export default class Portfolio extends React.Component {
               <div className="col s12 m12 l4">
                <div className="card z-depth-2">
                   <div className="card-image video-container">
-                    <iframe title="" width="853" height="480" src={data.portfolio.item3.vlink} frameBorder="0" allowFullScreen></iframe>
+                    <iframe title="other video" width="853" height="480" src={data.portfolio.item3.vlink} frameBorder="0" allowFullScreen></iframe>
                   </div>
                   <div className="card-content">
                     <h5 className="card-title">{data.portfolio.item3.title}</h5>
