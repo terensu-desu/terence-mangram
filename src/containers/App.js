@@ -3,6 +3,7 @@ import { HashRouter as Router, Route } from 'react-router-dom';
 import Sidebar from '../components/Sidebar';
 import Home from '../components/Home';
 import Projects from '../components/Projects';
+import MyApps from '../components/MyApps';
 import store from '../Store';
 
 export default class App extends Component {
@@ -33,6 +34,7 @@ export default class App extends Component {
 		      <Sidebar changeLanguage={this.changeLanguage} />
 	        <Route exact path="/" render={() => <Home displayData={this.handleDisplayData()} />} />
 	        <Route path="/projects" render={() => <Projects displayData={this.handleDisplayData()} />} />
+	        <Route path="/apps" render={() => <MyApps displayData={this.handleDisplayData()} />} />
 	      </div>
 	    </Router>
     );
