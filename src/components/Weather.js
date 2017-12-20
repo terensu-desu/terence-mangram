@@ -14,24 +14,23 @@ export default class Weather extends Component {
 		const main = this.props.weatherData.weather[0].main;
 		const image = document.getElementById("weatherPic");
 		if(main === "Clouds") {
-			image.setAttribute("src", "https://imgur.com/izW56El");
+			image.setAttribute("src", "https://i.imgur.com/izW56El.jpg");
 		}else if(main === "Sunny") {
-			return "https://imgur.com/Jw1jyEb"
+			image.setAttribute("src", "https://i.imgur.com/Jw1jyEb.jpg");
 		}else if(main === "Clear") {
-			return "https://imgur.com/lUyzPBV"
+			image.setAttribute("src", "https://i.imgur.com/lUyzPBV.jpg");
 		}else if(main === "Rain") {
-			return "https://imgur.com/ciMHslI"
+			image.setAttribute("src", "https://i.imgur.com/ciMHslI.jpg");
 		}else if(main === "Snow") {
-			return "https://imgur.com/xGLOJ76"
+			image.setAttribute("src", "https://i.imgur.com/xGLOJ76.jpg");
 		}
 	}
 
 	render() {
 		const weatherData = this.props.weatherData;
-		console.log(weatherData);
 		const calcF = (temp) => {
-			return (temp *   1.8) + 32;
-		};
+			return (temp * 1.8) + 32;
+		}
 		const temp = weatherData.main.temp;
 		const tempMax = weatherData.main.temp_max;
 		const tempMin = weatherData.main.temp_min;
@@ -41,10 +40,16 @@ export default class Weather extends Component {
 					<div className="card-content center">
 						<h4>Weather in {weatherData.name}</h4>
 						<h5>{weatherData.weather[0].main} at {this.props.scale ? temp : calcF(temp)}&deg;{this.props.scale ? "C" : "F"}</h5>
+						<div className="divider"></div>
+						<p>High: {this.props.scale ? tempMax : calcF(tempMax)}&deg;{this.props.scale ? "C" : "F"}</p>
+						<p>Low: {this.props.scale ? tempMin : calcF(tempMin)}&deg;{this.props.scale ? "C" : "F"}</p>
+						<p>Humidity: {weatherData.main.humidity}</p>
+						<br/>
+						<a className="btn app-btn" onClick={this.props.toggleTempScale}>Switch to {this.props.scale ? "Fahrenheit" : "Celsius"}</a>
 					</div>
 				</div>
 				<div className="card-image">
-					<img id="weatherPic" src="#Farzana" alt="weather icon" />
+					<img id="weatherPic" src="#Farzana" alt="weather" />
 				</div>
 			</div>
 		)

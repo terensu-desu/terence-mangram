@@ -14,10 +14,12 @@ export default class WeatherApp extends Component {
 		this.getWeatherData = this.getWeatherData.bind(this);
 	}
 
+	// call weather data retrieval function
 	componentWillMount() {
 		this.getWeatherData()
 	}
 
+	// using navigator.geolocation, get position, request data from FreeCodeCamp Weather API and set it to state and remove loading state
 	getWeatherData() {
 		if(navigator.geolocation) {
 			navigator.geolocation.getCurrentPosition((position) => {
@@ -37,13 +39,15 @@ export default class WeatherApp extends Component {
 		} else { alert("Sorry, geolocation is required for this app to function.")}
 	}
 
-	changeTempScale() {
+	// record old state for metric, set the state to the opposite of that
+	toggleTempScale() {
+		const oldMetricState = this.state.metric;
 		this.setState({
-			metric: !this.state.metric
+			metric: !oldMetricState
 		});
 	}
 
 	render() {
-		return this.state.loading ? <Loading /> : <Weather weatherData={this.state.weatherData} scale={this.state.metric} changeTempScale={this.changeTempScale} />
+		return this.state.loading ? <Loading /> : <Weather weatherData={this.state.weatherData} scale={this.state.metric} toggleTempScale={() => this.toggleTempScale()} />
 	}
 }
