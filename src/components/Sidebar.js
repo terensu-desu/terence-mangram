@@ -42,7 +42,7 @@ export default class Sidebar extends Component {
   render() {
     return (
       <div>
-      	<a data-target="slide-out" className="sidenav-trigger button-collapse btn sidebar-btn"><i className="material-icons">keyboard_arrow_right</i></a>
+      	<a data-target="slide-out" className="sidenav-trigger button-collapse btn sidebar-btn"><i className="material-icons cool-arrow">keyboard_arrow_right</i></a>
         <ul id="slide-out" className="sidenav">
         	<li>
         		<div className="user-view center sidebar-profile">
@@ -72,7 +72,7 @@ export default class Sidebar extends Component {
             <Link to="/apps">My Apps<i className="material-icons accent right">apps</i></Link>
           </li>
         	<li className="nav-li"><div className="divider"></div></li>
-        	<li><p className="sidebar-header">Projects</p></li>
+        	<li><p className="sidebar-header no-margin-bot">Projects</p><hr className="sidebar-hr" /></li>
         	<li className="nav-li"><a href="https://terensu-desu.github.io/nihon-alt/" className="waves-effect sidebar-link sidenav-close">NihonALT</a></li>
           <li className="nav-li"><a href="https://terensu-desu.github.io/vitamin/"  className="waves-effect sidebar-link sidenav-close">Vitamin</a></li>
           <li className="nav-li"><a href="https://github.com/terensu-desu"  className="waves-effect sidebar-link sidenav-close">Github</a></li>
