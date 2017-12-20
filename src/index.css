@@ -3,28 +3,11 @@
 	on hover: #FBB829;
 */
 
-.example-enter {
-  opacity: 0.01;
-}
-
-.example-enter.example-enter-active {
-  opacity: 1;
-  transition: opacity 500ms ease-in;
-}
-
-.example-leave {
-  opacity: 1;
-}
-
-.example-leave.example-leave-active {
-  opacity: 0.01;
-  transition: opacity 300ms ease-in;
-}
-
 body {
   margin: 0;
   padding: 0;
   font-family: "Didact Gothic", "Century Gothic";
+  background-color: #f5f5f5;
 }
 
 /* General styling rules */
@@ -110,7 +93,15 @@ a:hover {
 
 .sidebar-btn:hover, .sidebar-btn a:hover {
 	color: #FFF !important;
+	padding-left: 60px !important;
 	background-color: #FBB829;
+}
+
+.cool-arrow {
+	transition: .5s;
+}
+
+.cool-arrow:hover {
 }
 
 .sidebar-profile a {
@@ -128,3 +119,34 @@ a:hover {
 	font-size: 1.2rem !important;
   text-align: center;
 }
+
+.sidebar-hr {
+	width: 50%;
+}
+
+/* My Apps page styling */
+.app-btn {
+	background-color: #990012 !important;
+	-webkit-appearance: none;
+}
+
+/* Styling for the materialize forms */
+
+/* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: #990012 !important;
+   }
+/* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid #990012 !important;
+     box-shadow: 0 1px 0 0 #000 !important;
+   }
+/* valid color */
+   .input-field input[type=text].valid {
+     border-bottom: 1px solid #990012 !important;
+     box-shadow: 0 1px 0 0 #ff9800 !important;
+   }
+/* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #990012;
+   }
