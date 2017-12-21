@@ -48,6 +48,14 @@ export default class WeatherApp extends Component {
 	}
 
 	render() {
-		return this.state.loading ? <Loading /> : <Weather weatherData={this.state.weatherData} scale={this.state.metric} toggleTempScale={() => this.toggleTempScale()} />
+		return (
+			<div className="col s12 l6">
+			 {
+			 	this.state.loading 
+			 		? <div className="card-panel center"><br/><Loading /></div>
+			 		: <Weather weatherData={this.state.weatherData} scale={this.state.metric} toggleTempScale={() => this.toggleTempScale()} />
+			 	}
+			</div>
+		)
 	}
 }

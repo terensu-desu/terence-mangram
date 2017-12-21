@@ -29,23 +29,23 @@ export default class Weather extends Component {
 	render() {
 		const weatherData = this.props.weatherData;
 		const calcF = (temp) => {
-			return (temp * 1.8) + 32;
+			return Math.round((temp * 1.8) + 32);
 		}
 		const temp = weatherData.main.temp;
 		const tempMax = weatherData.main.temp_max;
 		const tempMin = weatherData.main.temp_min;
 		return (
-			<div className="card horizontal">
+			<div className="card horizontal z-depth-2">
 				<div className="card-stacked">
 					<div className="card-content center">
-						<h4>Weather in {weatherData.name}</h4>
+						<h4>Weather in <span>{weatherData.name}</span></h4>
 						<h5>{weatherData.weather[0].main} at {this.props.scale ? temp : calcF(temp)}&deg;{this.props.scale ? "C" : "F"}</h5>
 						<div className="divider"></div>
 						<p>High: {this.props.scale ? tempMax : calcF(tempMax)}&deg;{this.props.scale ? "C" : "F"}</p>
 						<p>Low: {this.props.scale ? tempMin : calcF(tempMin)}&deg;{this.props.scale ? "C" : "F"}</p>
 						<p>Humidity: {weatherData.main.humidity}</p>
 						<br/>
-						<a className="btn app-btn" onClick={this.props.toggleTempScale}>Switch to {this.props.scale ? "Fahrenheit" : "Celsius"}</a>
+						<a className="btn app-btn" onClick={this.props.toggleTempScale}>{this.props.scale ? "Fahrenheit" : "Celsius"}</a>
 					</div>
 				</div>
 				<div className="card-image">
