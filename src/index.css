@@ -44,6 +44,10 @@ a:hover {
 	margin-bottom: 0 !important;
 }
 
+.active {
+  color: #990012;
+}
+
 /* Banner styling rules */
 .banner-image {
 	background: url(https://i.imgur.com/3VuMkuL.jpg?2) no-repeat center center;
@@ -133,20 +137,49 @@ a:hover {
 /* Styling for the materialize forms */
 
 /* label focus color */
-   .input-field input[type=text]:focus + label {
-     color: #990012 !important;
-   }
+  .input-field input[type=text]:focus + label {
+    color: #990012 !important;
+  }
 /* label underline focus color */
-   .input-field input[type=text]:focus {
-     border-bottom: 1px solid #990012 !important;
-     box-shadow: 0 1px 0 0 #000 !important;
-   }
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid #990012 !important;
+    box-shadow: 0 1px 0 0 #000 !important;
+  }
 /* valid color */
-   .input-field input[type=text].valid {
-     border-bottom: 1px solid #990012 !important;
-     box-shadow: 0 1px 0 0 #ff9800 !important;
-   }
+  .input-field input[type=text].valid {
+    border-bottom: 1px solid #990012 !important;
+    box-shadow: 0 1px 0 0 #ff9800 !important;
+  }
 /* icon prefix focus color */
-   .input-field .prefix.active {
-     color: #990012;
-   }
+  .input-field .prefix.active {
+    color: #990012;
+  }
+
+/* LeaderboardApp styling */
+.app-title {
+  border-radius: 15px 15px 0 0;
+  background-color: #990012;
+  color: white;
+  padding-bottom: 10px;
+  margin-bottom: 0
+}
+
+.material-icons.md-30 {
+  margin: 0 2px 0 5px;
+  font-size: 30px; 
+}
+
+.table-div {
+  border-radius: 15px 15px 0 0;
+}
+
+.user-img  {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+/* RecipeApp styling */
+.recipe-body {
+  color: black !important;
+}
