@@ -34,7 +34,9 @@
     <script type="text/javascript">
       setTimeout(() => {
         var sidenav = document.querySelector('.sidenav');
-        var instance = new M.Sidenav(sidenav);
+        var sidenavInstance = new M.Sidenav(sidenav);
+        var collapsibleRecipes = document.querySelector('.collapsible');
+        var recipesInstance = new M.Collapsible(collapsibleRecipes, {accordian: false});
       }, 200 )
     </script>
   </body>
