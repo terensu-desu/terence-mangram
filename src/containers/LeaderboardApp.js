@@ -52,7 +52,7 @@ export default class LeaderboardApp extends Component {
 			<div className="col s12 l6 center">
 			{
 				this.state.loading 
-				? <Loading /> 
+				? <Loading />
 				: <Leaderboard recent={this.state.recent} allTime={this.state.allTime} sort={this.sortView} view={this.state.displayView} />
 			}
 			</div>
