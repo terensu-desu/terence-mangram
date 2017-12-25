@@ -3,4 +3,11 @@
         var sidenavInstance = new M.Sidenav(sidenav);
         var collapsibleRecipes = document.querySelector('.collapsible');
         var recipesInstance = new M.Collapsible(collapsibleRecipes, {accordian: false});
-      }, 200 )</script><script type="text/javascript" src="/terence-mangram/static/js/main.52235df3.js"></script></body></html>
+      }, 200);
+      setInterval(() => {
+        var oldWindow = window.location.hash
+        if(oldWindow = "#/apps") {
+          var collapsibleRecipes = document.querySelector('.collapsible');
+          var recipesInstance = new M.Collapsible(collapsibleRecipes, {accordian: false});
+        }
+      }, 2000)</script><script type="text/javascript" src="/terence-mangram/static/js/main.f74665a7.js"></script></body></html>
