@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import LeaderboardApp from '../containers/LeaderboardApp';
-import RecipeApp from '../containers/RecipeApp';
+import RecipeAppContainer from '../containers/RecipeAppContainer';
 import WeatherApp from '../containers/WeatherApp';
 import WikiApp from '../containers/WikiApp';
 
@@ -34,7 +34,7 @@ export default class MyApps extends Component {
 						</div>
 						<div className="row">
 							<LeaderboardApp />
-							<RecipeApp />
+							<RecipeAppContainer />
 						</div>
 					</div>
 				</div>
