@@ -37,7 +37,14 @@
         var sidenavInstance = new M.Sidenav(sidenav);
         var collapsibleRecipes = document.querySelector('.collapsible');
         var recipesInstance = new M.Collapsible(collapsibleRecipes, {accordian: false});
-      }, 200 )
+      }, 200);
+      setInterval(() => {
+        var oldWindow = window.location.hash
+        if(oldWindow = "#/apps") {
+          var collapsibleRecipes = document.querySelector('.collapsible');
+          var recipesInstance = new M.Collapsible(collapsibleRecipes, {accordian: false});
+        }
+      }, 2000)
     </script>
   </body>
 </html>
