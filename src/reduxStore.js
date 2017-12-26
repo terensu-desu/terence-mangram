@@ -28,7 +28,6 @@ const recipeList = [
 // Save result of our loadState function that checks for localstorage key named 'state'
 let persistedState = [];
 persistedState = loadState();
-console.log(persistedState)
 // Check if that array is empty, if so add our placeholder recipes
 if(persistedState.length === 0) {
 	persistedState = recipeList;
