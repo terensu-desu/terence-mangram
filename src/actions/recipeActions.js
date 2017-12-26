@@ -1,6 +1,9 @@
-export function addRecipe(name, list, text) {
+import { v4 } from "node-uuid";
+
+export function addRecipe(name, list, text, id) {
 	return {
 		type: 'ADD_RECIPE',
+		id: v4(),
 		name,
 		list,
 		text
