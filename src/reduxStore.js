@@ -28,7 +28,7 @@ const recipeList = [
 // Save result of our loadState function that checks for localstorage key named 'state'
 let persistedState = loadState();
 // Check if that array is empty, if so add our placeholder recipes
-if(persistedState === "undefined" || typeof persistedState[0] === "undefined") {
+if(persistedState === "undefined") {
 	persistedState = recipeList;
 }
 // Subscribe to call the saveState function any time the state changes
