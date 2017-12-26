@@ -5,7 +5,8 @@ const recipeReducer = (state = {}, action) => {
 				{
 					name: action.name,
 					list: action.list,
-					text: action.text
+					text: action.text,
+					id: action.id
 				},
 				...state
 			]
