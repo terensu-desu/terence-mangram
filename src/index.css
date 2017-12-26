@@ -171,6 +171,7 @@ a:hover {
 
 .table-div {
   border-radius: 15px 15px 0 0;
+  padding-bottom: 1px;
 }
 
 .user-img  {
