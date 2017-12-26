@@ -10,7 +10,6 @@ export default class Recipes extends Component {
 	handleAppRecipes() {
 		// Use map function to build the section using a template and the data from objects in the array
 		// Also note the second map function called to build the list of ingredients (property value is array)
-		if(this.props.recipes === "undefined") { return null }
 		const recipesMap = this.props.recipes.map((item, index) => {
 			if(item === null) { return null }
 			return  (

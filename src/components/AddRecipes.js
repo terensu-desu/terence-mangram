@@ -43,6 +43,7 @@ export default class AddRecipes extends Component {
 		  	</div>
 		  	<div className="row center no-margin-bot">
 		  		<p>Your added recipes will stay, even if you leave! Try it out!</p>
+		  		<p>Note: By design, if there are no recipes, it will display the original two.</p>
 		  	</div>
 		  </div>
 		)
