@@ -3,13 +3,15 @@ import {connect} from "react-redux";
 import Recipes from '../components/Recipes';
 
 // Import our actions so we can properly declare them later
-import { addRecipe } from '../actions/recipeActions';
-import { editRecipe } from '../actions/recipeActions';
-import { removeRecipe } from '../actions/recipeActions';
+import { addRecipe, editRecipe, removeRecipe, editRecipeSave } from '../actions/recipeActions';
 
 class RecipeApp extends Component {
   render() {
-    return <Recipes recipes={this.props.recipes} addRecipe={this.props.addRecipe} editRecipe={this.props.editRecipe} removeRecipe={this.props.removeRecipe} />
+    return <Recipes recipes={this.props.recipes} 
+    								addRecipe={this.props.addRecipe} 
+    								editRecipe={this.props.editRecipe} 
+    								removeRecipe={this.props.removeRecipe}
+    								saveEdit={this.props.editRecipeSave} />
   }
 }
 
@@ -31,6 +33,9 @@ const mapDispatchToProps = (dispatch) => {
   	},
   	removeRecipe: (index) => {
   		dispatch(removeRecipe(index))
+  	},
+  	editRecipeSave: (index, name, list, text) => {
+  		dispatch(editRecipeSave(index, name, list, text))
   	}
   };
 };
