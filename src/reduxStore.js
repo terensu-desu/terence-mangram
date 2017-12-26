@@ -6,14 +6,14 @@ import { loadState, saveState } from "./localStorage"
 // Set some placeholder recipes, to show of but can also be interacted with
 const recipeList = [
 	{
-    name: "Achar Gosht with Mutton",
+    name: "Achar Gosht with Chicken",
     id: v4(),
-    list: ["Mutton: 1kg", "Yogurt: 1/2kg", "Tomato paste: 1 cup", "Garlic ginger: 1 Tbsp", "Red chili powder: as required", "Cumin: as required",
+    list: ["Chicken: 1kg", "Yogurt: 1/2kg", "Tomato paste: 1 cup", "Garlic ginger: 1 Tbsp", "Red chili powder: as required", "Cumin: as required",
     				"Salt: to taste", "Green chili: 50 grams", "Achar Masala/spice: as required", "Kalunji: as required", "Saunf: as required",
     				"Fenugreek seeds: as required"],
 		text: `First make the mixture of ginger, chili powder, salt, garlic and yogurt. Now soak the meat in this mixture for 2 hours. Heat the oil, put the spiced meat and fry until spices are separated. Add water and cook on low flame until the meat is tender.\n
 						Grind the achaar spice and add 1 teaspoon salt to it. Slit green chilies vertically from one side and take its seeds out. Now fill green chilies with ground achaar spice.
-						When the water dries out from meat, pour tomato paste, garnish cooked meat with stuffed chilies and put the remaining achaar spice. Now lower the heat and leave it for dam until chilies are tender. Then it's ready to eat!`,
+						When the water dries out from meat, pour tomato paste, garnish cooked meat with stuffed chilies and put the remaining achaar spice. Now lower the heat and leave it for dam until chilies are tender. Then, sit down and enjoy Jodha Akbar with Farzana and eat with your (or her) hand(s).`,
 	},
 	{
     name: "Gnocci Pesto with Shrimp",
