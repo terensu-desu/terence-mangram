@@ -59,6 +59,7 @@ export default class Leaderboard extends Component {
 						{this.displayData()}
 					</tbody>
 				</table>
+				<p>Data provided by <a href="https://www.freecodecamp.org">FreeCodeCamp</a></p>
 			</div>
 		)
 	}

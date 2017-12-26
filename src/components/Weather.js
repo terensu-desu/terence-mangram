@@ -14,7 +14,7 @@ export default class Weather extends Component {
 		const main = this.props.weatherData.weather[0].main;
 		const image = document.getElementById("weatherPic");
 		if(main === "Clouds") {
-			image.setAttribute("src", "https://i.imgur.com/izW56El.jpg");
+			image.setAttribute("src", "https://i.imgur.com/GKGkr94.jpg");
 		}else if(main === "Sunny") {
 			image.setAttribute("src", "https://i.imgur.com/Jw1jyEb.jpg");
 		}else if(main === "Clear") {
@@ -46,6 +46,8 @@ export default class Weather extends Component {
 						<p>Humidity: {weatherData.main.humidity}</p>
 						<br/>
 						<a className="btn app-btn" onClick={this.props.toggleTempScale}>{this.props.scale ? "Fahrenheit" : "Celsius"}</a>
+						<br/><br/>
+						<p>Data provided by <a href="https://www.freecodecamp.org">FreeCodeCamp</a></p>
 					</div>
 				</div>
 				<div className="card-image">
