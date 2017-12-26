@@ -6,6 +6,7 @@ export default class Weather extends Component {
 		this.handleWeatherIcon = this.handleWeatherIcon.bind(this);
 	}
 
+	// To display the weather picture based on the weather condition, wait until the component mounts so that the element has been created
 	componentDidMount() {
 		this.handleWeatherIcon()
 	}

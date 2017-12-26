@@ -7,6 +7,7 @@ export default class EditRecipes extends Component {
 		this.handleEditSubmit = this.handleEditSubmit.bind(this);
 	}
 
+	// Should be able to update the state on change -- currently only deletes all of state
 	handleEditChange(e) {
 		e.preventDefault();
 		if(e.target.id === "name"){

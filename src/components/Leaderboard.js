@@ -7,6 +7,7 @@ export default class Leaderboard extends Component {
 		this.displayData = this.displayData.bind(this);
 	}
 
+	// Based on what link was clicked, the function prop will be called to change the parent state.
 	handleSortClick(e, val) {
 		e.preventDefault();
 		if(val === "recent") {
@@ -16,6 +17,7 @@ export default class Leaderboard extends Component {
 		}
 	}
 
+	// Determine which sorting view the state is in, then call the function to map the data.
 	displayData() {
 		if(this.props.view) {
 			return this.mapData(this.props.recent);
@@ -23,6 +25,7 @@ export default class Leaderboard extends Component {
 		return this.mapData(this.props.allTime);
 	}
 
+	// Based on the sorting view determined by displayData(), mapData will map out the data from that prop
 	mapData(filter) {
 		return filter.slice(0,5).map((info, i) => {
 			return (

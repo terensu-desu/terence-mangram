@@ -21,6 +21,8 @@ export default class Sidebar extends Component {
         document.getElementById("english-btn").classList.add("hidden")
       }
   }
+
+  // handleActiveLink will make sure the sidebar links reflect where the user currently is
   handleActiveLink(e) {
     e.preventDefault();
     const userLocation = window.location.hash;

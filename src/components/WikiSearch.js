@@ -7,6 +7,7 @@ export default class WikiSearch extends Component {
 	}
 
 	handleSearchResults() {
+		// Take search results from props and map them out, then return that to be displayed
 		const resultsMap = this.props.searchResults.map((item, i) => {
 			return (
 				<div className="row no-margin-bot" key={i}>

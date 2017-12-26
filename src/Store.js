@@ -9,7 +9,7 @@ class Store extends EventEmitter {
         english: {
           banner: {
             main: "Terence Mangram",
-            sub: "Bilingual Front-End Developer in Japan"
+            sub: "Bilingual Front-End Developer"
           },
           about: `My start as a web developer began long ago in junior high school, though I didn't realize it at the time. My friends and I had been really into computers and eventually started fiddling around with creating websites. Fast forward many years and I found myself in Japan and an opportunity to build a website from scratch for my company's public English teacher department. It started with templates and hacky code but in the end came together nicely as I improved. \n
                   When I first started this website, which we called ChubuALT (no longer around, but survives as my pet project called NihonALT), I knew very little about web development, but the excitement it stirred up motivated me beyond belief. I ended up spending all my free time studying and improving on the site.\n
@@ -40,7 +40,7 @@ class Store extends EventEmitter {
         japanese: {
           banner: {
             main: "Terence Mangram",
-            sub: "日本にバイリンガルフロントエンドエンジニア"
+            sub: "日本にフロントエンドエンジニア"
           },
           about: `左ふト新勢えろ価49乱放望光56手ぽてがょ円巧スばい資択づ式典シオ際58続検マヲ駅倉ち何創船とイず。更消リネクシ編貿ソヱウ引将更よま村画ど元院ヘヲ島相やらて確犯ルアヘハ断80材テソフウ机月抽綱し。年述シヌヒ次問ラシタモ徹容だ質版べ江点し急将まぴぜ断感電フクムエ応権ばぜえ券承モ強電ホミチ仕枚あ。\n
                   窃志イ遠出モシテ荷促ミルテウ薫読ハコト事真ラほ例9話れざ会稿会ら賞月トやン大戻ルコウ記建ムイ母特レ速4断昇双脈鶴う。立カヒユイ真決芸ぐずん速美拠テナヤ載内ケヱスヌ天真を負公リマ憲上ヤ創品ス暴問ふ権勢謙ねうッわ況投レさ京玉ん丸働迎妻げくめド。18繁サ独78記ぞは地体例ユサ死定ヨネオリ設都信そがご茶住みンも隊濃53育ネ意易びよけ親暮へクく感残左球講トドッ。\n
