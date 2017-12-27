@@ -14,7 +14,7 @@ export const loadState = () => {
 			    				"Fenugreek seeds: as required"],
 					text: `First make the mixture of ginger, chili powder, salt, garlic and yogurt. Now soak the meat in this mixture for 2 hours. Heat the oil, put the spiced meat and fry until spices are separated. Add water and cook on low flame until the meat is tender.\n
 									Grind the achaar spice and add 1 teaspoon salt to it. Slit green chilies vertically from one side and take its seeds out. Now fill green chilies with ground achaar spice.
-									When the water dries out from meat, pour tomato paste, garnish cooked meat with stuffed chilies and put the remaining achaar spice. Now lower the heat and leave it for dam until chilies are tender. Then, sit down and enjoy Jodha Akbar with Farzana and eat with your (or her) hand(s).`,
+									When the water dries out from meat, pour tomato paste, garnish cooked meat with stuffed chilies and put the remaining achaar spice. Now lower the heat and leave it for dam until chilies are tender. Then, sit down and enjoy Jodha Akbar with a beautiful girl named Farzana and eat with your hand or let her feed you (best).`,
 				},
 				{
 			    name: "Gnocci Pesto with Shrimp",
