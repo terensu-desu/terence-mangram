@@ -31,7 +31,7 @@ export default class AddRecipes extends Component {
 		  				<input id="name" type="text" ref="name" />
 		  			</div>
 		  			<div className="input-field">
-		  				<label htmlFor="list">Ingredients</label>
+		  				<label htmlFor="list">Ingredients (separate with commas)</label>
 		  				<input id="list" type="text" ref="list" />
 		  			</div>
 		  			<div className="input-field">
@@ -42,8 +42,8 @@ export default class AddRecipes extends Component {
 		  		</form>
 		  	</div>
 		  	<div className="row center no-margin-bot">
-		  		<p>Your added recipes will stay, even if you leave! Try it out!</p>
-		  		<p>Note: By design, if there are no recipes, it will display the original two.</p>
+		  		<p>Your added recipes will stay, even if you leave the page. Try it out!</p>
+		  		<a className="accent" onClick={() => {localStorage.clear(); window.location.reload();}}>Click here to reset the demo.</a>
 		  	</div>
 		  </div>
 		)
