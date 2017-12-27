@@ -24,6 +24,14 @@ a:hover {
 	color: #FBB829 !important;
 }
 
+button {
+  transition: .5s;
+}
+
+button:hover {
+  color: #FBB829 !important;
+}
+
 .accent {
 	color: #bc002d !important;
 }
@@ -132,6 +140,7 @@ a:hover {
 .app-btn {
 	background-color: #990012 !important;
 	-webkit-appearance: none;
+  transition: .5s;
 }
 
 /* Styling for the materialize forms */
@@ -162,6 +171,10 @@ a:hover {
   color: white;
   padding-bottom: 10px;
   margin-bottom: 0
+}
+
+.sort-btn:hover {
+  cursor: pointer
 }
 
 .material-icons.md-30 {
