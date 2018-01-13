@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HashRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Sidebar from '../components/Sidebar';
 import Home from '../components/Home';
 import Projects from '../components/Projects';
@@ -29,7 +29,7 @@ export default class App extends Component {
 	// navigation and two routes, each passed display data based on current state language
   render() {
     return (
-    	<Router>
+    	<Router basename={process.env.PUBLIC_URL}>
 	      <div>   
 		      <Sidebar changeLanguage={this.changeLanguage} />
 	        <Route exact path="/" render={() => <Home displayData={this.handleDisplayData()} />} />
