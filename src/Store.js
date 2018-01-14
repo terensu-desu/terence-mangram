@@ -11,10 +11,15 @@ class Store extends EventEmitter {
             main: "Terence Mangram",
             sub: "Bilingual Front-End Developer"
           },
-          about: `My start as a web developer began long ago in junior high school, though I didn't realize it at the time. My friends and I had been really into computers and eventually started fiddling around with creating websites. Fast forward many years and I found myself in Japan and an opportunity to build a website from scratch for my company's public English teacher department. It started with templates and hacky code but in the end came together nicely as I improved. \n
-                  When I first started this website, which we called ChubuALT (no longer around, but survives as my pet project called NihonALT), I knew very little about web development, but the excitement it stirred up motivated me beyond belief. I ended up spending all my free time studying and improving on the site.\n
-                  Since then, I've been fully investing myself into this new passion of mine. I've become proficient with JavaScript, jQuery, Git and GitHub, BootStrap, Materialize, and, by far my favorite, ReactJS. Have a look at my portfolio section to see some highlights of my experience. In April 2018, I'll be moving to Chicago, IL. I'm hoping to join a friendly team of developers that create exciting products!\n
-                  Whether you'd like to contact me for more on my web development experience, talk about employment opportunities, talk shop about web dev things, find the best ramen in Nagoya, talk about the latest in Formula 1, ask my opinion about some new game, or some nice places in Japan - feel free to contact me!`,
+          about: `My start as a web developer began long ago in junior high school, though I didn't realize it at the time. My friends and I had been really into computers and eventually started fiddling around with creating websites. Fast forward many years and I found myself in Japan with an opportunity to build a website from scratch for my company's public English teacher department. It started with templates and hacky code but in the end came together nicely as I improved.
+
+                  When I first started this website, which we called ChubuALT (no longer around, but survives as my pet project called NihonALT), I knew very little about web development, but the excitement it stirred up motivated me beyond belief. I ended up spending all my free time studying and improving on the site.
+
+                  Since then I've been fully investing myself into this new passion of mine. I've become highly skilled with HTML, CSS, JavaScript, jQuery, React, Git and GitHub, and grid-based CSS libraries like Materialize and Bootstrap. Have a look at my portfolio section to see some highlights of my experience. I also have many small apps on my Codepen page.
+
+                  In April 2018, I'll be moving to Chicago, IL. Honestly, I'm really excited and hoping to join a friendly team of developers that create exciting websites and apps! It's been a long road to get here and I feel confident in the ability to contribute to a team.
+
+                  Whether you'd like to contact me to talk about employment opportunities, talk shop about web dev things, find the best ramen in Nagoya, talk about the latest in Formula, some new game, or Japan in general - feel free to contact me!`,
           portfolio: {
             item1: {
               title: "NihonALT",
