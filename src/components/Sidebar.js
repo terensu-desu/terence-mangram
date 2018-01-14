@@ -25,16 +25,16 @@ export default class Sidebar extends Component {
   // handleActiveLink will make sure the sidebar links reflect where the user currently is
   handleActiveLink(e) {
     e.preventDefault();
-    const userLocation = window.location.hash;
-    if(userLocation === "#/") {
+    const userLocation = window.location.pathname;
+    if(userLocation === "/") {
       document.getElementById("myBio").classList.add("active");
       document.getElementById("myProjects").classList.remove("active");
       document.getElementById("myApps").classList.remove("active");
-    }else if(userLocation === "#/projects") {
+    }else if(userLocation === "/projects") {
       document.getElementById("myProjects").classList.add("active");
       document.getElementById("myBio").classList.remove("active");
       document.getElementById("myApps").classList.remove("active");
-    }else if(userLocation === "#/apps") {
+    }else if(userLocation === "/apps") {
       document.getElementById("myApps").classList.add("active");
       document.getElementById("myProjects").classList.remove("active");
       document.getElementById("myBio").classList.remove("active");
@@ -76,7 +76,7 @@ export default class Sidebar extends Component {
         	<li className="nav-li"><div className="divider"></div></li>
         	<li><p className="sidebar-header no-margin-bot">Projects</p><hr className="sidebar-hr" /></li>
         	<li className="nav-li"><a href="https://terensu-desu.github.io/nihon-alt/" className="waves-effect sidebar-link sidenav-close">NihonALT</a></li>
-          <li className="nav-li"><a href="https://terensu-desu.github.io/vitamin/"  className="waves-effect sidebar-link sidenav-close">Vitamin</a></li>
+          <li className="nav-li"><a href="https://terensu-desu.github.io/buddies/"  className="waves-effect sidebar-link sidenav-close">Buddies</a></li>
           <li className="nav-li"><a href="https://github.com/terensu-desu"  className="waves-effect sidebar-link sidenav-close">Github</a></li>
           <li className="nav-li"><a href="https://codepen.io/terensu-desu/"  className="waves-effect sidebar-link sidenav-close">CodePen</a></li>
         </ul>
