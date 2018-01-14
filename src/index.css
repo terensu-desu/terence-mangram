@@ -76,13 +76,6 @@ button:hover {
 }
 
 /* Home > About styling rules */
-
-@media screen and (min-width:601px) {
-  .bio {
-    margin-top: 12vh;
-  }
-}
-
 .article {
 	white-space: pre-line;
 }
@@ -94,6 +87,11 @@ button:hover {
 
 .fa:hover {
 	color: #FBB829;
+}
+
+.footer {
+  margin: 0 auto;
+  width: 600px;
 }
 
 /* Sidebar styling rules */
