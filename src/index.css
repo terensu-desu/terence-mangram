@@ -42,6 +42,7 @@ button:hover {
 
 .card-panel {
 	padding: 12px 24px 12px 24px !important;
+  border-radius: 8px;
 }
 
 .no-margin-top {
@@ -75,6 +76,13 @@ button:hover {
 }
 
 /* Home > About styling rules */
+
+@media screen and (min-width:601px) {
+  .bio {
+    margin-top: 12vh;
+  }
+}
+
 .article {
 	white-space: pre-line;
 }
@@ -100,6 +108,7 @@ button:hover {
   margin: 60px 0 0;
   padding-right: 12px !important;
   position: absolute;
+  font-size: 26px;
   transition: .5s;
 }
 
