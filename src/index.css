@@ -62,10 +62,6 @@ button:hover {
 	background: url(https://i.imgur.com/3VuMkuL.jpg?2) no-repeat center center;
 }
 
-.banner-image2 {
-	background: url(https://i.imgur.com/3VuMkuL.jpg?2) no-repeat center center;
-}
-
 .author-showcase {
 	margin-top: 20px;
 }
@@ -75,7 +71,14 @@ button:hover {
   text-shadow: -5px 5px 8px #000;
 }
 
-/* Home > About styling rules */
+/* About styling rules */
+
+@media screen and (min-width: 992px) {
+  .bio {
+    margin-top: 5vh;
+  }
+}
+
 .article {
 	white-space: pre-line;
 }
