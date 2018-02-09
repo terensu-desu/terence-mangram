@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Loading from '../components/Loading';
-import Weather from '../components/Weather';
+import Weather from '../components/Apps/WeatherApp/Weather';
 
 export default class WeatherApp extends Component {
 	constructor() {

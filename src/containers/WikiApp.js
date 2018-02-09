@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import WikiSearch from '../components/WikiSearch';
+import WikiSearch from '../components/Apps/WikipediaSearchApp/WikiSearch';
 
 export default class WikiApp extends Component {
 	constructor() {

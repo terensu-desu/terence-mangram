@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import Leaderboard from '../components/Leaderboard';
+import Leaderboard from '../components/Apps/LeaderboardApp/Leaderboard';
 import Loading from '../components/Loading';
 
 export default class LeaderboardApp extends Component {
