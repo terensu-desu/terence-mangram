@@ -5,6 +5,7 @@
   "homepage": "https://terensu-desu.github.io/terence-mangram",
   "dependencies": {
     "axios": "^0.17.1",
+    "d3": "^4.13.0",
     "gh-pages": "^1.1.0",
     "node-uuid": "^1.4.8",
     "react": "^16.2.0",
@@ -14,7 +15,8 @@
     "react-scripts": "1.0.17",
     "react-transition-group": "^1.2.1",
     "redux": "^3.7.2",
-    "redux-logger": "^3.0.6"
+    "redux-logger": "^3.0.6",
+    "textures": "^1.2.0"
   },
   "scripts": {
     "predeploy": "npm run build",
