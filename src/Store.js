@@ -7,11 +7,11 @@ class Store extends EventEmitter {
       english: true,
       displayData: {
         english: {
-          about: `My start as a web developer began long ago in junior high school, though I didn't realize it at the time. My friends and I had been really into computers and eventually started fiddling around with creating websites. Fast forward many years and I found myself in Japan with an opportunity to build a website from scratch for my company's public English teacher department.
+          about: `I'm Terence Mangram, developer, world-traveler, lifetime-learner. An American citizen, born in Spain, raised in Florida, living in Japan, and soon moving to Chicago. My start as a web developer began long ago in junior high school, though I didn't realize it at the time. My friends and I had been really into computers and eventually started fiddling around with creating websites. Fast forward many years and I found myself in Japan with an opportunity to build a website from scratch for my company's public English teacher department.
 
                   This first website, called ChubuALT, sparked me to teach myself all the knowledge necessary to be a valuable web developer. Soon after, I spent all my on studying and working on projects. Since then, I've gained expertise in HTML, CSS, JavaScript (ES5 and ES6), jQuery, React, and Git & GitHub. Soon, I'll be adding Node.js and Test Driven Development skills to my arsenal. I love learning, and I strive to learn something new and valuable every single day.
 
-                  In April 2018, I'll be moving to Chicago, IL to start my career as a web developer. I am looking for employment, so feel free to reach to me. I'll be happy to talk shop, expand on my story, chat about Japan, Formula 1, bouldering, tennis, video games, books, whatever you like!`,
+                  In April 2018, I'll be moving to Chicago, IL to start my career as a web developer. I am looking for employment, so feel free to contact me. I'll be happy to talk shop, expand on my story, chat about Japan, Formula 1, bouldering, tennis, video games, books, or whatever you like!`,
           portfolio: [
             {
               title: "NihonALT",
@@ -22,13 +22,13 @@ class Store extends EventEmitter {
             {
               title: "Buddies",
               text: "With two friends of mine at Nagoya University, I embarked on a project to demonstrate a website business aimed at helping foreigners in Japan. Inspired by AirBnB and our experience of living in a foreign country, we dream of launching a website that can enable others to do more in Japan.",
-              vlink: "https://placehold.it/388x218",
+              vlink: "/media/buddiesSS.jpg",
               url: "https://terensu-desu.github.io/buddies/"
             },
             {
               title: "GitHub and CodePen",
-              text: "I don't have many large projects, as I am just getting my web dev feet. I do, however, have many small projects that are published on CodePen and my GitHub page. Many are either pure JavaScript, to improve my fundamentals, or React.js, to be in touch with the current trends. Feel free to have  a  look.",
-              vlink: "https://placehold.it/388x218",
+              text: "While I don't have many large projects, I do have many small projects that are published on CodePen and my GitHub page. Many are either pure JavaScript, to improve my fundamentals, or React.js, to be in touch with the current trends. Feel free to have a look and give me advice.",
+              vlink: "/media/gitpenSS.jpg",
               url1: "https://github.com/terensu-desu",
               url2: "https://codepen.io/terensu-desu/"
             }
@@ -49,13 +49,13 @@ class Store extends EventEmitter {
             {
               title: "Buddies",
               text: "もすぐ面白い何かを作りたいです。今ダッシュボードをアプリを作ること考えています。そのプロジェクトは便利な毎日インフォメシオンを見せています。例えば、天気、ニュース、渋滞のニュースなどを見ることできます。また来てください。",
-              vlink: "https://placehold.it/388x218",
+              vlink: "/media/buddiesSS.jpg",
               url: "https://terensu-desu.github.io/buddies/"
             },
             {
               title: "GitHub and CodePen",
               text: "このプロジェクトにもっとJavaScriptを使いたかったです。二つの欲求に小規模な本屋を描きました。一つ目は本に買いものする客さんに引き付けます。二つ目は本を話し合う客さんに引き付けます。目玉商品と新しい商品は見えやすいです。も客さんは話し合うイベントのカレンダー見えます。",
-              vlink: "https://placehold.it/388x218",
+              vlink: "/media/gitpenSS.jpg",
               url1: "https://github.com/terensu-desu",
               url2: "https://codepen.io/terensu-desu/"
             }
