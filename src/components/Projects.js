@@ -22,15 +22,17 @@ export default class Portfolio extends React.Component {
       );
     });
     return (
-      <div className="card-panel no-margin-bot">
-        <div className="row center no-margin-top no-margin-bot">
-          <div className="col s12">
-            <h3 className="no-margin-top no-margin-bot"><span>Projects</span></h3>
-            <hr className="small-hr"/>
-          </div>
-        </div>
-        <div className="row no-margin-top no-margin-bot">
-          {items}
+      <div className="section">
+        <div className="card-container">
+            <div className="row no-margin-top no-margin-bot">
+              <div className="col s12 l3">
+                <h3 className="center no-margin-top no-margin-bot"><span>Projects</span></h3>
+              </div>
+            </div>
+            <hr/>
+            <div className="row no-margin-top no-margin-bot">
+              {items}
+            </div>
         </div>
       </div>
     )
