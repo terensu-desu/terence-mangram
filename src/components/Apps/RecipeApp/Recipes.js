@@ -39,8 +39,12 @@ export default class Recipes extends Component {
 					<h4 className="center app-title no-margin-top z-depth-2">Recipe List Redux</h4>
 					<ul className="collapsible expand no-margin-top z-depth-2">
 				    {this.handleAppRecipes()}
+					  <AddRecipes addRecipe={this.props.addRecipe} />
 				  </ul>
-				  <AddRecipes addRecipe={this.props.addRecipe} />
+				  <div className="row center no-margin-bot">
+		  		<p>Your added recipes and changes will stay, even if you leave the page. Try it out!</p>
+		  		<a className="accent" onClick={() => {localStorage.clear(); window.location.reload();}}>Click here to reset the demo.</a>
+		  	</div>
 			</div>
 		)
 	}
