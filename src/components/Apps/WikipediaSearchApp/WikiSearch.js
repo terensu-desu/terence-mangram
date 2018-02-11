@@ -33,7 +33,13 @@ export default class WikiSearch extends Component {
 					<br/>
 					<br/>
 					<br/>
-					<h5>Search to see the top three results from Wikipedia.</h5>
+					<h5>Search to see the top five results from Wikipedia.</h5>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
 					<br/>
 					<br/>
 					<br/>
@@ -48,7 +54,7 @@ export default class WikiSearch extends Component {
 				<div className="card-panel z-depth-2">
 					<div className="row">
 						<div className="col s12 center">
-							<h4 className="no-margin-bot accent">Wikipedia Search</h4>
+							<h4 className="no-margin-top no-margin-bot accent">Wikipedia Search</h4>
 						</div>
 					</div>
 					<div className="row no-margin-bot">
@@ -61,7 +67,7 @@ export default class WikiSearch extends Component {
 								</div>
 								<div className="col s4 center">
 									<br/>
-									<a className="btn app-btn" type="submit" onClick={this.props.getWikiData}>Search</a>
+									<a className="btn app-btn" type="submit">Search</a>
 								</div>
 							</div>
 						</form>
