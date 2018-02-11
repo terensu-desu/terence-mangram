@@ -31,15 +31,13 @@ export default class App extends Component {
 	// navigation and two routes, each passed display data based on current state language
 	render() {
 		return (
-			<div>
+			<div className="container-fluid">
 				<Header />
-				<div className="container">
-					{/*<Sidebar changeLanguage={this.changeLanguage} />*/}
-					<About displayData={this.handleDisplayData()} />
-					<MyApps displayData={this.handleDisplayData()} />
-					<Projects displayData={this.handleDisplayData()} />
-					<Footer />
-				</div>
+				{/*<Sidebar changeLanguage={this.changeLanguage} />*/}
+				<About displayData={this.handleDisplayData()} />
+				<MyApps displayData={this.handleDisplayData()} />
+				<Projects displayData={this.handleDisplayData()} />
+				<Footer />
 			</div>
 		);
 	}
