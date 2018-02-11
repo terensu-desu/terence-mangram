@@ -39,6 +39,7 @@ export default class Weather extends Component {
 			<div className="card horizontal z-depth-2">
 				<div className="card-stacked">
 					<div className="card-content center">
+						<br/>
 						<h4>Weather in <span>{weatherData.name}</span></h4>
 						<h5>{weatherData.weather[0].main} at {this.props.scale ? temp : calcF(temp)}&deg;{this.props.scale ? "C" : "F"}</h5>
 						<div className="divider"></div>
@@ -52,7 +53,7 @@ export default class Weather extends Component {
 					</div>
 				</div>
 				<div className="card-image">
-					<img id="weatherPic" src="#Farzana" alt="weather" />
+					<img id="weatherPic" src="#Farzana" alt="weather" className="responsive-img" />
 				</div>
 			</div>
 		)
