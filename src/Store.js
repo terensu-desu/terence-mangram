@@ -22,13 +22,13 @@ class Store extends EventEmitter {
             {
               title: "Buddies",
               text: "With two friends of mine at Nagoya University, I embarked on a project to demonstrate a website business aimed at helping foreigners in Japan. Inspired by AirBnB and our experience of living in a foreign country, we dream of launching a website that can enable others to do more in Japan.",
-              vlink: "/media/buddiesSS.jpg",
+              vlink: "https://i.imgur.com/3UwgmHx.jpg",
               url: "https://terensu-desu.github.io/buddies/"
             },
             {
               title: "GitHub and CodePen",
               text: "While I don't have many large projects, I do have many small projects that are published on CodePen and my GitHub page. Many are either pure JavaScript, to improve my fundamentals, or React.js, to be in touch with the current trends. Feel free to have a look and give me advice.",
-              vlink: "/media/gitpenSS.jpg",
+              vlink: "https://i.imgur.com/XAIPcIV.jpg",
               url1: "https://github.com/terensu-desu",
               url2: "https://codepen.io/terensu-desu/"
             }
@@ -49,13 +49,13 @@ class Store extends EventEmitter {
             {
               title: "Buddies",
               text: "もすぐ面白い何かを作りたいです。今ダッシュボードをアプリを作ること考えています。そのプロジェクトは便利な毎日インフォメシオンを見せています。例えば、天気、ニュース、渋滞のニュースなどを見ることできます。また来てください。",
-              vlink: "/media/buddiesSS.jpg",
+              vlink: "https://i.imgur.com/3UwgmHx.jpg",
               url: "https://terensu-desu.github.io/buddies/"
             },
             {
               title: "GitHub and CodePen",
               text: "このプロジェクトにもっとJavaScriptを使いたかったです。二つの欲求に小規模な本屋を描きました。一つ目は本に買いものする客さんに引き付けます。二つ目は本を話し合う客さんに引き付けます。目玉商品と新しい商品は見えやすいです。も客さんは話し合うイベントのカレンダー見えます。",
-              vlink: "/media/gitpenSS.jpg",
+              vlink: "https://i.imgur.com/XAIPcIV.jpg",
               url1: "https://github.com/terensu-desu",
               url2: "https://codepen.io/terensu-desu/"
             }
