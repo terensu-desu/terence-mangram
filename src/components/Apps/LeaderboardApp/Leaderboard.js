@@ -60,9 +60,11 @@ export default class Leaderboard extends Component {
 							</td>
 						</tr>
 						{this.displayData()}
+						<tr>
+							<td colSpan="4" className="center">Data provided by <a href="https://www.freecodecamp.org">FreeCodeCamp</a></td>
+						</tr>
 					</tbody>
 				</table>
-				<p>Data provided by <a href="https://www.freecodecamp.org">FreeCodeCamp</a></p>
 			</div>
 		)
 	}
