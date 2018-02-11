@@ -11,8 +11,9 @@ export default class WikiApp extends Component {
 	}
 
 	// get search query and request data from Wiki API and set it to state
-	getWikiData() {
-		const baseURL = "https://en.wikipedia.org//w/api.php?action=query&format=json&origin=*&uselang=user&prop=pageimages%7Cextracts&generator=search&pilimit=max&exsentences=6&exlimit=max&exintro=1&explaintext=1&gsrnamespace=&gsrlimit=3&gsrsearch=";
+	getWikiData(e) {
+		e.preventDefault();
+		const baseURL = "https://en.wikipedia.org//w/api.php?action=query&format=json&origin=*&uselang=user&prop=pageimages%7Cextracts&generator=search&pilimit=max&exsentences=6&exlimit=max&exintro=1&explaintext=1&gsrnamespace=&gsrlimit=5&gsrsearch=";
 		const userQuery = document.getElementById("search-field").value;
 		axios({
 			method:'get',
