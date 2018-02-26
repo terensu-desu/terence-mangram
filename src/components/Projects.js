@@ -8,7 +8,16 @@ export default class Portfolio extends React.Component {
         <div className="col s12 m12 l4" key={i}>
           <div className="card z-depth-2">
             <div className="card-image video-container">
-              <iframe title={item.title} width="853" height="480" src={item.vlink} frameBorder="0" allowFullScreen></iframe>
+            {item.vlink ?
+              <iframe 
+                title={item.title} 
+                width="853" height="480" 
+                src={item.vlink} 
+                frameBorder="0" 
+                allowFullScreen>
+              </iframe>
+              : <img src={item.ilink} alt={"Project "+ item.title}/>
+            }
             </div>
             <div className="card-content">
               <h5 className="card-title">{item.title}</h5>
