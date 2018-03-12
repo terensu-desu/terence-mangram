@@ -39,7 +39,7 @@ class Recipes extends Component {
 					<AddRecipes addNewRecipe={this.props.addNewRecipe} />
 			  </ul>
 			  <div className="row center no-margin-bot">
-					<p>Your added recipes and changes will stay, even if you leave the page. Try it out!</p>
+					<p>Your added recipes and changes will persist, even if you leave the page. Try it out!</p>
 					<button className="btn app-btn" onClick={() => resetStorage()}>Click here to reset the demo</button>
 				</div>
 			</div>
