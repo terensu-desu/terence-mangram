@@ -14,7 +14,7 @@ class WeatherApp extends Component {
 
 	// using navigator.geolocation, get position, request data from FreeCodeCamp Weather API and set it to state and remove loading state
 	getWeatherData = () => {
-		if (navigator.geolocation) {
+		if(navigator.geolocation) {
 			navigator.geolocation.getCurrentPosition(position => {
 				const lon = position.coords.longitude;
 				const lat = position.coords.latitude;
@@ -40,10 +40,9 @@ class WeatherApp extends Component {
 		}
 	};
 
-	// record old state for metric, set the state to the opposite of that
 	toggleTempScale = () => {
 		this.setState(prevState => {
-			return { metric: !prevState };
+			return { metric: !prevState.metric };
 		});
 	};
 
