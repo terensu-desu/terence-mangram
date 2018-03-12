@@ -208,3 +208,9 @@ table.bordered>tbody>tr:last-child {
 #blank-search {
   margin: 100px 0;
 }
+
+/* TwitchTV App */
+.user-logo {
+  height: 100px;
+  width: 100px;
+}
