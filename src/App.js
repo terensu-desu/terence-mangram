@@ -3,7 +3,7 @@ import M from "materialize-css";
 
 import Header from "./components/Header/Header";
 import About from "./components/About/About";
-import AppShowcase from "./components/AppShowcase/AppShowcase";
+import AppShowcase from "./containers/AppShowcase/AppShowcase";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer/Footer";
 
