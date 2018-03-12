@@ -1,30 +1,23 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Leaderboard from '../../components/Leaderboard/Leaderboard';
-import Loading from '../../components/Loading/Loading';
 
-export default class LeaderboardApp extends Component {
-	constructor() {
-		super();
-		this.state = {
-			loading: true,
-			displayView: true,
-			recent: [],
-			allTime: []
-		}
-		this.sortView = this.sortView.bind(this);
-	}
+class LeaderboardApp extends Component {
+	state = {
+		loading: true,
+		displayRecent: true,
+		recent: null,
+		allTime: null
+	};
 
 	componentDidMount() {
 		this.getLeaderboardData();
 	}
 
-	getLeaderboardData() {
+	getLeaderboardData = () => {
 		axios.get("https://fcctop100.herokuapp.com/api/fccusers/top/recent")
 			.then((response) => {
-				this.setState({
-					recent: response.data
-				});
+				this.setState({ recent: response.data });
 			})
 			.catch((err) => {
 				console.log("Error in recent points retrieval", err)
@@ -39,23 +32,30 @@ export default class LeaderboardApp extends Component {
 			.catch((err) => {
 				console.log("Error in recent points retrieval", err)
 			});
-	}
+	};
 
-	sortView(val) {
-		this.setState({
-			displayView: val
-		});
-	}
+	sortByRecent = () => {
+		this.setState({ displayRecent: true });
+	};
+
+	sortByAllTime = () => {
+		this.setState({ displayRecent: false });
+	};
 
 	render() {
 		return (
 			<div className="col s12 l6 center">
-			{
-				this.state.loading 
-				? <Loading />
-				: <Leaderboard recent={this.state.recent} allTime={this.state.allTime} sort={this.sortView} view={this.state.displayView} />
-			}
+				<Leaderboard
+					recent={this.state.recent}
+					allTime={this.state.allTime}
+					sortByRecent={this.sortByRecent}
+					sortByAllTime={this.sortByAllTime}
+					recentSort={this.state.displayRecent}
+					loading={this.state.loading}
+				/>
 			</div>
 		)
 	}
 }
+
+export default LeaderboardApp;
