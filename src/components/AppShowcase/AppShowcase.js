@@ -48,7 +48,7 @@ class AppShowcase extends Component {
 				<div className="card-container">
 						<div className="row center no-margin-top no-margin-bot">
 							<div className="col s6 l4 hide-on-med-and-down">
-								<a className="btn app-btn" onClick={this.backShowcasePage}><i className="material-icons left">navigate_before</i>Previous</a>
+								<a className="btn app-btn" onClick={this.backShowcasePage}><i className="material-icons left">navigate_before</i>Back</a>
 	            </div>
 	            <div className="col s12 l4">
 	              <h3 className="no-margin-top no-margin-bot"><span>App Showcase</span></h3>
