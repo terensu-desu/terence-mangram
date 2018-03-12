@@ -18,7 +18,7 @@ class AddRecipes extends Component {
 	render() {
 		return (
 		  			<li>
-		  				<div className="collapsible-header">Add a Recipe</div>
+		  				<div className="collapsible-header"><i className="material-icons">touch_app</i>Add a Recipe</div>
 		  				<div className="collapsible-body">
 		  					<form id="recipeForm" onSubmit={(event) => this.handleSubmitRecipe(event)}>
 					  			<div className="input-field">
