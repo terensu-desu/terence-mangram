@@ -1,0 +1,89 @@
+.calcButton {
+	width: 60px !important;
+	height: 60px !important;
+	margin: 2px !important;
+	appearance: none !important;
+	-webkit-appearance: none !important;
+	-moz-appearance: none !important;
+	padding: 10px !important;
+	box-shadow: 3px 3px black !important;
+	border: none !important;
+	border-radius: 4px !important;
+	font-size: 30px !important;
+}
+
+.calcButton:focus {
+	outline: 0 !important;
+}
+
+.calcButton:active {
+	box-shadow: 0 1px black !important;
+	transform: translateY(1px) !important;
+}
+
+.calcButton.red {
+	background-color: #b71c1c !important;
+	color: white !important;
+}
+
+.calcButton.white {
+	background-color: white !important;
+}
+
+#main-container {
+	margin: 0 auto !important;
+	width: 300px !important;
+	background-color: #01579b !important;
+	border-radius: 5px !important;
+	box-shadow: 5px 8px black !important;
+}
+
+#display-container {
+	padding: 5px !important;
+	text-align: center !important;
+}
+
+#button-container {
+	text-align: center !important;
+}
+
+#display {
+	font-family: "Orbitron", sans-serif;
+	width: 270px !important;
+	height: 60px !important;
+	font-size: 30px !important;
+	text-align: right !important;
+	color: black;
+	background-color: lightgray !important;
+}
+
+#credit {
+	font-family: 'Cherry Swash', cursive;
+	color: white !important;
+	margin-left: 20px !important;
+}
+
+#message {
+	margin-left: 15px !important;
+	height: 30px !important;
+	width: 110px !important;
+	font-size: 18px !important;
+	text-align: center !important;
+	background-color: lightgray !important;
+}
+
+#name {
+	color: white !important;
+	font-size: 28px !important;
+	font-weight: 900 !important;
+	margin-left: 35px !important;
+}
+
+#power {
+	width: 129px !important;
+}
+
+.no-power {
+	background-color: black !important;
+	color: black !important;
+}
