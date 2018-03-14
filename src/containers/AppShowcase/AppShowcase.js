@@ -6,6 +6,7 @@ import WikiApp from "../WikiApp/WikiApp";
 import LeaderboardApp from "../LeaderboardApp/LeaderboardApp";
 import RecipeApp from "../RecipeApp/RecipeApp";
 import TwitchApp from "../TwitchApp/TwitchApp";
+import CalculatorApp from "../CalculatorApp/CalculatorApp";
 import Aux from "../../hoc/Aux";
 
 class AppShowcase extends Component {
@@ -41,9 +42,12 @@ class AppShowcase extends Component {
 		if(this.state.page === 3) {
 			showcase = <TwitchApp/>
 		}
+		if(this.state.page === 4) {
+			showcase = <CalculatorApp/>
+		}
 		let nextBtnClass = "btn app-btn";
 		let backBtnClass = "btn app-btn";
-		if(this.state.page === 3) {
+		if(this.state.page === 4) {
 			nextBtnClass = "btn app-btn disabled";
 		}
 		if(this.state.page === 1) {
