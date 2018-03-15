@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import Wiki from "../../components/Wiki/Wiki";
+import FadeTransition from "../../hoc/FadeTransition";
 
 class WikiApp extends Component {
 	state = { searchResults: null, loading: false };
@@ -27,11 +28,13 @@ class WikiApp extends Component {
 	};
 	render() {
 		return (
-			<Wiki
-				getWikiData={this.getWikiData}
-				searchResults={this.state.searchResults}
-				loading={this.state.loading}
-			/>
+			<FadeTransition>
+				<Wiki
+					getWikiData={this.getWikiData}
+					searchResults={this.state.searchResults}
+					loading={this.state.loading}
+				/>
+			</FadeTransition>
 		);
 	}
 }
