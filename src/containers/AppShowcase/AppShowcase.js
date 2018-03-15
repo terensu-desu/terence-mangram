@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { CSSTransitionGroup } from "react-transition-group";
 
 import WeatherApp from "../WeatherApp/WeatherApp";
 import WikiApp from "../WikiApp/WikiApp";
@@ -40,10 +39,10 @@ class AppShowcase extends Component {
 			);
 		}
 		if(this.state.page === 3) {
-			showcase = <TwitchApp/>
+			showcase = <TwitchApp />;
 		}
 		if(this.state.page === 4) {
-			showcase = <CalculatorApp/>
+			showcase = <CalculatorApp />;
 		}
 		let nextBtnClass = "btn app-btn";
 		let backBtnClass = "btn app-btn";
@@ -63,7 +62,9 @@ class AppShowcase extends Component {
 								</a>
 	            </div>
 	            <div className="col s12 l4">
-	              <h3 className="no-margin-top no-margin-bot"><span>App Showcase</span></h3>
+	              <h3 className="no-margin-top no-margin-bot">
+	              	<span>App Showcase</span>
+	              </h3>
 	            </div>
 	            <div className="col s6 l4 hide-on-med-and-down">
 		            <a className={nextBtnClass} onClick={this.advanceShowcasePage}>
@@ -85,13 +86,7 @@ class AppShowcase extends Component {
 	          </div>
 	          <hr/>
 						<div className="row">
-							<CSSTransitionGroup
-								component={Aux}
-			          transitionName="fade"
-			          transitionEnterTimeout={1000}
-			          transitionLeaveTimeout={500}>
-			          {showcase}
-			        </CSSTransitionGroup>
+			        {showcase}
 						</div>
 				</div>
 			</div>
