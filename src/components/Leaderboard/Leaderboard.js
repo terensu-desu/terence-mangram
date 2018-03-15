@@ -10,7 +10,7 @@ const leaderboard = props => {
 		}
 		const viewData = sortFilter.slice(0,5).map((camper, i) => (
 			<tr key={camper.username}>
-				<td className="center">{i+1}</td>
+				<td className="center rank">{i+1}</td>
 				<td>{camper.username}<img className="left user-img" alt="user" src={camper.img} /></td>
 				<td className="center">{camper.recent}</td>
 				<td className="center">{camper.alltime}</td>
