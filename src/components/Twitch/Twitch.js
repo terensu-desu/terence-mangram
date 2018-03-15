@@ -1,5 +1,6 @@
 import React from "react";
 import Loading from "../Loading/Loading";
+import FadeTransition from "../../hoc/FadeTransition";
 
 const twitch = props => {
 	let view = <Loading />;
@@ -15,11 +16,13 @@ const twitch = props => {
 						return (
 							<tr key={channel.display_name}>
 								<td>
-									<img
-										src={channel.logo}
-										alt="logo"
-										className="responsive-img user-logo"
-									/>
+									<a href={"https://www.twitch.tv/" + channel.name}>
+										<img
+											src={channel.logo}
+											alt="logo"
+											className="responsive-img user-logo"
+										/>
+									</a>
 								</td>
 								<td>
 									<a href={"https://www.twitch.tv/" + channel.name}>
@@ -27,15 +30,13 @@ const twitch = props => {
 									</a>
 								</td>
 								<td>
-									Status: {channel.stream["stream_type"] === "Offline"
+									<span>Status:</span> {channel.stream["stream_type"] === "Offline"
 										? channel.stream.stream_type
 										: channel.stream.channel.status}
 								</td>
-								<td>
-									{channel.stream["stream_type"] === "Offline"
-										? bio
-										: "Playing: " + channel.stream.game}
-								</td>
+								{channel.stream["stream_type"] === "Offline"
+									? <td>{bio}</td>
+									: <td><span>Playing: </span>{channel.stream.game}</td>}
 							</tr>
 						);
 					})}
@@ -44,19 +45,21 @@ const twitch = props => {
 		);
 	}
 	return (
-		<div className="col s12 center">
-			<div className="card-panel card-round">
-				<img
-					alt="twitch logo"
-					src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Twitch_logo_%28wordmark_only%29.svg/300px-Twitch_logo_%28wordmark_only%29.svg.png"
-				/>
-				<h5>See what's happening on Twitch.tv!</h5>
-				<h5>
-					by <span>Terence Mangram</span> for FreeCodeCamp
-				</h5>
-				{view}
+		<FadeTransition>
+			<div className="col s12 center">
+				<div className="card-panel card-round">
+					<img
+						alt="twitch logo"
+						src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Twitch_logo_%28wordmark_only%29.svg/300px-Twitch_logo_%28wordmark_only%29.svg.png"
+					/>
+					<h5>See what's happening on Twitch.tv!</h5>
+					<h5>
+						by <span>Terence Mangram</span> for FreeCodeCamp
+					</h5>
+					{view}
+				</div>
 			</div>
-		</div>
+		</FadeTransition>
 	);
 };
 
