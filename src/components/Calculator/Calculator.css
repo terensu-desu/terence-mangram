@@ -54,7 +54,7 @@
 	font-size: 30px !important;
 	text-align: right !important;
 	color: black;
-	background-color: lightgray !important;
+	background-color: lightgray;
 }
 
 #credit {
