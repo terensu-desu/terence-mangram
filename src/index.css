@@ -1,21 +1,11 @@
-/* 
-	site accent colors: #bc002d;
-	on hover: #FBB829;
-*/
-
-
-.col a {
-  margin-top: 10px;
-}
-
 body {
   margin: 0;
   padding: 0;
-  font-family: "Didact Gothic", "Century Gothic";
+  font-family: "Didact Gothic", "Century Gothic", sans-sarif;
   background-color: #f5f5f5;
 }
 
-/* General styling rules */
+/* GENERAL STYLING */
 span {
 	color: #990012;
 }
@@ -33,12 +23,24 @@ p {
   font-size: 1.1rem
 }
 
+.col a {
+  margin-top: 10px;
+}
+
 .accent {
 	color: #990012 !important;
 }
 
 .hidden {
 	display: none !important;
+}
+
+.no-margin-top {
+  margin-top: 0 !important;
+}
+
+.no-margin-bot {
+  margin-bottom: 0 !important;
 }
 
 .card-container {
@@ -63,14 +65,7 @@ p {
   border-radius: 0 0 8px 8px !important;
 }
 
-.no-margin-top {
-	margin-top: 0 !important;
-}
-
-.no-margin-bot {
-	margin-bottom: 0 !important;
-}
-
+/* BANNER STYLING */
 .banner-image {
 	background: url(https://i.imgur.com/uVWqdcS.jpg) no-repeat 65% 55%;
 }
@@ -85,6 +80,7 @@ p {
   text-shadow: -5px 5px 8px #000;
 }
 
+/* ABOUT STYLING */
 @media screen and (min-width: 992px) {
   .bio {
     margin-top: 5vh;
@@ -93,6 +89,7 @@ p {
 
 .article {
 	white-space: pre-line;
+  font-size: 1.1rem;
 }
 
 .fa {
@@ -104,13 +101,10 @@ p {
 	color: #FBB829;
 }
 
+/* FOOTER STYLING */
 .footer {
   margin: 0 auto;
   width: 600px;
-}
-
-.title {
-  padding-left: 36px;
 }
 
 .app-btn {
@@ -119,30 +113,17 @@ p {
   transition: .5s;
 }
 
-#weatherPic {
-  border-radius: 0 8px 8px 0 !important;
-}
-
-/* CSSTransitions */
-.fade-enter {
+/* CSSTransitions STYLING */
+.fade-appear {
   opacity: 0.01;
 }
 
-.fade-enter.fade-enter-active {
+.fade-appear.fade-appear-active {
   opacity: 1;
   transition: opacity 1000ms;
 }
 
-.fade-leave {
-  opacity: 1;
-}
-
-.fade-leave.fade-leave-active {
-  opacity: 0.01;
-  transition: opacity 500ms;
-}
-
-/* Styling for the materialize forms */
+/* FORMS STYLING */
 
 /* label focus color */
   .input-field input[type=text]:focus + label {
@@ -163,10 +144,12 @@ p {
     color: #990012;
   }
 
-/* LeaderboardApp styling */
+/* LEADERBOARDAPP STYLING */
 table {
   background-color: white;
+  font-size: 1.2rem;
 }
+
 table.bordered>tbody>tr:last-child {
   border-bottom: 0;
 } 
@@ -178,7 +161,9 @@ table.bordered>tbody>tr:last-child {
   padding-bottom: 10px;
   margin-bottom: 0
 }
-
+.rank {
+  font-family: "Orbitron", sans-serif;
+}
 .sort-btn:hover {
   cursor: pointer
 }
@@ -199,17 +184,22 @@ table.bordered>tbody>tr:last-child {
   margin-right: 15px;
 }
 
-/* RecipeApp styling */
+/* WEATHERAPP STYLING */
+#weatherPic {
+  border-radius: 0 8px 8px 0 !important;
+}
+
+/* RECIPEAPP STYLING */
 .recipe-body {
   color: black !important;
 }
 
-/* WikiApp */
+/* WIKIAPP STYLING */
 #blank-search {
   margin: 100px 0;
 }
 
-/* TwitchTV App */
+/* TWITCHAPP STYLING */
 .user-logo {
   height: 100px;
   width: 100px;
