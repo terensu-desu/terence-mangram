@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Leaderboard from '../../components/Leaderboard/Leaderboard';
+import FadeTransition from "../../hoc/FadeTransition";
 
 class LeaderboardApp extends Component {
 	state = {
@@ -44,16 +45,18 @@ class LeaderboardApp extends Component {
 
 	render() {
 		return (
-			<div className="col s12 l6 center">
-				<Leaderboard
-					recent={this.state.recent}
-					allTime={this.state.allTime}
-					sortByRecent={this.sortByRecent}
-					sortByAllTime={this.sortByAllTime}
-					recentSort={this.state.displayRecent}
-					loading={this.state.loading}
-				/>
-			</div>
+			<FadeTransition>
+				<div className="col s12 l6 center">
+					<Leaderboard
+						recent={this.state.recent}
+						allTime={this.state.allTime}
+						sortByRecent={this.sortByRecent}
+						sortByAllTime={this.sortByAllTime}
+						recentSort={this.state.displayRecent}
+						loading={this.state.loading}
+					/>
+				</div>
+			</FadeTransition>
 		)
 	}
 }
