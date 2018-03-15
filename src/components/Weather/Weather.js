@@ -1,6 +1,7 @@
 import React from "react";
 import Loading from "../Loading/Loading";
 import Results from "./Results/Results";
+import FadeTransition from "../../hoc/FadeTransition";
 
 const weather = props => {
 	let weatherView = <Loading />;
@@ -13,7 +14,13 @@ const weather = props => {
 			/>
 		);
 	}
-	return <div className="col s12 l6">{weatherView}</div>;
+	return (
+		<FadeTransition>
+			<div className="col s12 l6">
+				{weatherView}
+			</div>
+		</FadeTransition>
+	);
 };
 
 export default weather;
