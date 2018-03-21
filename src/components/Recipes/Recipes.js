@@ -17,14 +17,19 @@ class Recipes extends Component {
 				<div className="collapsible-header"><i className="material-icons">restaurant</i>{recipe.name}</div>
 	      <div className="collapsible-body recipe-body">
 		      <ul>
-		      		{recipe.ingredients.map((ingredient, j) => <li key={j}>{ingredient}</li>)}
+	      		{recipe.ingredients.map((ingredient, j) => <li key={ingredient+j}>{ingredient}</li>)}
 	      	</ul>
 	      	<hr />
 	      	<p className="no-margin-top article">{recipe.text}</p>
 	      	<button 
-	      		onClick={() => this.props.removeRecipe(recipe.id)} 
-	      		className="btn app-btn right">
-	      			Delete<i className="material-icons right">delete</i>
+      		data-target={"#modal"+recipe.id}
+      		className="btn app-btn left modal-trigger">
+      			Edit<i className="material-icons right">edit</i>
+	      	</button>
+	      	<button 
+      		onClick={() => this.props.removeRecipe(recipe.id)} 
+      		className="btn app-btn right">
+      			Delete<i className="material-icons right">delete</i>
 	      	</button>
 	      	<br/>
 	      </div>
@@ -35,8 +40,8 @@ class Recipes extends Component {
 				<div className="col s12 l6">
 					<h4 className="center app-title no-margin-top z-depth-2">Recipe List Redux</h4>
 					<ul 
-						ref={collapsible => {this.collapsible = collapsible}}
-						className="collapsible expand no-margin-top z-depth-2">
+					ref={collapsible => {this.collapsible = collapsible}}
+					className="collapsible expand no-margin-top z-depth-2">
 						{recipesMap}
 						<AddRecipes addNewRecipe={this.props.addNewRecipe} />
 				  </ul>
