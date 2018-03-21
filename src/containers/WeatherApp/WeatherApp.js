@@ -8,7 +8,7 @@ class WeatherApp extends Component {
 		metric: true,
 		weatherData: null
 	};
-	componentDidMount() {
+	componentWillMount() {
 		this.getWeatherData();
 	}
 
