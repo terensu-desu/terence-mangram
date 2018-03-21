@@ -5,7 +5,7 @@ import FadeTransition from "../../hoc/FadeTransition";
 
 const weather = props => {
 	let weatherView = <Loading />;
-	if (!props.loading) {
+	if (props.weatherData) {
 		weatherView = (
 			<Results
 				weatherData={props.weatherData}
