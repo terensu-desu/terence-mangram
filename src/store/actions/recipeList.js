@@ -25,6 +25,11 @@ export const editRecipe = (id, keyName, value) => {
 		value: value
 	};
 };
+/*export const saveEditedRecipe = () => {
+	return {
+		
+	}
+};*/
 export const setRetrievedState = () => {
 	return {
 		type: actionTypes.SET_RETRIEVED_STATE
@@ -36,9 +41,6 @@ export const removeRecipe = id => {
 		type: actionTypes.REMOVE_RECIPE,
 		id: id
 	};
-};
-export const resetRecipes = () => {
-	localStorage.clear();
 };
 const saveRecipeToLocalStorage = (recipe) => {
 	if(localStorage.getItem("recipes")) {

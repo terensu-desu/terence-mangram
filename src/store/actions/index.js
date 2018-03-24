@@ -2,7 +2,7 @@ export {
 	addNewRecipe,
 	addLocalRecipe,
 	editRecipe,
+	saveEditedRecipe,
 	setRetrievedState,
-	removeRecipe,
-	resetRecipes
+	removeRecipe
 } from "./recipeList";
