@@ -32,7 +32,7 @@ class CalculatorApp extends Component {
 	handleCalculate = () => {
 		try {
 			let newCalcValue = math.eval(this.state.userInputDisplay.join(""));
-			if(isNaN(newCalcValue) || newCalcValue === Infinity) {
+			if(isNaN(newCalcValue) || newCalcValue === Infinity || newCalcValue === -Infinity) {
 				throw new Error("error");
 			}
 			this.setState({ userInputDisplay: [newCalcValue] });
