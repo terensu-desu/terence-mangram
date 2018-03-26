@@ -13,7 +13,7 @@ const calculator = props => {
 				<span id="credit">Terence Mangram Instruments</span>
 				<div id="message-container">
 					<input id="message" type="text" disabled value={props.message} />
-					<span id="name">TM-108</span>
+					<span id="calcName">TM-108</span>
 				</div>
 				<br/>
 				<div id="button-container" onClick={props.click}>
