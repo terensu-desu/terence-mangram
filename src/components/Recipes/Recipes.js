@@ -11,12 +11,28 @@ class Recipes extends Component {
 		document.getElementById(id).classList.toggle("hidden");
 		document.getElementById(id+1).classList.toggle("hidden");
 	};
-	handleSaveClick(event, id) {
-		// do Redux edit call
+	handleSaveClick(event, id, editedRecipe) {
 		event.preventDefault();
-		console.log(event.target.text.value);
 		document.getElementById(id).classList.toggle("hidden");
 		document.getElementById(id-1).classList.toggle("hidden");
+		const editedStorage = JSON.parse(localStorage.getItem("recipes"));
+		const editedIndex = editedStorage.findIndex(recipe => recipe.id === editedRecipe.id);
+		editedStorage[editedIndex] = editedRecipe;
+		localStorage.setItem("recipes", JSON.stringify(editedStorage));
+	};
+	handleChange(event, id) {
+		event.preventDefault();
+		let updatedInfo = {};
+		if(event.target.name === "ingredients") {
+			updatedInfo = {
+				ingredients: event.target.value.split(", ")
+			};
+		} else {
+			updatedInfo = {
+				text: event.target.value
+			};
+		}
+		this.props.editRecipe(id, updatedInfo);
 	};
 	render() {
 		const resetStorage = () => {
@@ -47,14 +63,14 @@ class Recipes extends Component {
 	      <div id={recipe.id+1} className="collapsible-body recipe-body hidden">
 	      	<h5 className="center">Edit Mode</h5>
 	      	<hr />
-	      	<form onSubmit={(event)=> this.handleSaveClick(event, recipe.id+1)}>
+	      	<form onSubmit={(event)=> this.handleSaveClick(event, recipe.id+1, recipe)}>
 			      <div className="row">
 			      	<div className="input-field col s12">
-				      	{/* set up on change event that sends redux info it needs */}
 			      		<textarea
 			      		name="ingredients" 
 			      		id="ingredients" 
-			      		value={recipe.ingredients.join("\n")}
+			      		value={recipe.ingredients.join(", ")}
+			      		onChange={(event) => this.handleChange(event, recipe.id)}
 			      		className="materialize-textarea">
 			      		</textarea>
 			      		<label htmlFor="ingredients">Please keep items separated with a new line (shift + enter).</label>
@@ -62,12 +78,12 @@ class Recipes extends Component {
 		      	</div>
 		      	<div className="row">
 			      	<div className="input-field col s12">
-				      	{/* set up on change event that sends redux info it needs */}
 				      	<textarea 
 				      	name="text" 
 				      	id="recipe-text"
 				      	value={recipe.text}
-				      	className="materialize-textarea">.
+				      	onChange={(event) => this.handleChange(event, recipe.id)}
+				      	className="materialize-textarea">
 				      	</textarea>
 				      	<label htmlFor="recipe-text">Instructions</label>
 			      	</div>
@@ -95,7 +111,9 @@ class Recipes extends Component {
 				  </ul>
 				  <div className="row center no-margin-bot">
 						<p>Your added recipes and changes will persist, even if you leave the page. Try it out!</p>
-						<button className="btn app-btn" onClick={() => resetStorage()}>Click here to reset the demo</button>
+						<button className="btn app-btn" onClick={() => resetStorage()}>
+						Click here to reset the demo
+						</button>
 					</div>
 				</div>
 			</FadeTransition>
