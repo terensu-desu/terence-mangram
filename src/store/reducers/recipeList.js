@@ -16,7 +16,7 @@ const reducer = (state = initialState, action) => {
 			const editIndex = state.recipeList.findIndex(recipe => recipe.id === action.id);
 			const editedRecipe = { 
 				...state.recipeList[editIndex],
-				[action.keyName]: action.value
+				...action.newInfo
 			};
 			const newRecipeList = [
 				...state.recipeList.slice(0, editIndex),

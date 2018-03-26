@@ -17,24 +17,18 @@ export const addLocalRecipe = (localRecipe) => {
 		recipe: localRecipe
 	};
 };
-export const editRecipe = (id, keyName, value) => {
+export const editRecipe = (id, newInfo) => {
 	return {
 		type: actionTypes.EDIT_RECIPE,
 		id: id,
-		keyName: keyName,
-		value: value
+		newInfo: newInfo
 	};
 };
-/*export const saveEditedRecipe = () => {
-	return {
-		
-	}
-};*/
 export const setRetrievedState = () => {
 	return {
 		type: actionTypes.SET_RETRIEVED_STATE
-	}
-}
+	};
+};
 export const removeRecipe = id => {
 	removeRecipeFromLocalStorage(id);
 	return {
