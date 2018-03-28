@@ -85,7 +85,7 @@ class AppShowcase extends Component {
 	          	</div>
 	          </div>
 	          <hr/>
-						<div className="row">
+						<div id="app-showcase" className="row">
 			        {showcase}
 						</div>
 				</div>
