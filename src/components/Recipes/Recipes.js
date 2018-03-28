@@ -23,7 +23,11 @@ class Recipes extends Component {
 	handleChange(event, id) {
 		event.preventDefault();
 		let updatedInfo = {};
-		if(event.target.name === "ingredients") {
+		if(event.target.name === "edit-name") {
+			updatedInfo = {
+				name: event.target.value
+			};
+		} else if(event.target.name === "ingredients") {
 			updatedInfo = {
 				ingredients: event.target.value.split(", ")
 			};
@@ -64,6 +68,17 @@ class Recipes extends Component {
 	      	<h5 className="center">Edit Mode</h5>
 	      	<hr />
 	      	<form onSubmit={(event)=> this.handleSaveClick(event, recipe.id+1, recipe)}>
+	      		<div className="row">
+	      			<div className="input-field col s12">
+	      				<label htmlFor="edit-name">Recipe Name</label>
+		      			<input 
+		      			id="edit-name"
+		      			type="text" 
+		      			name="edit-name" 
+		      			value={recipe.name}
+		      			onChange={(event) => this.handleChange(event, recipe.id)} />
+	      			</div>
+	      		</div>
 			      <div className="row">
 			      	<div className="input-field col s12">
 			      		<textarea
@@ -73,7 +88,7 @@ class Recipes extends Component {
 			      		onChange={(event) => this.handleChange(event, recipe.id)}
 			      		className="materialize-textarea">
 			      		</textarea>
-			      		<label htmlFor="ingredients">Please keep items separated with a new line (shift + enter).</label>
+			      		<label htmlFor="ingredients">Ingredients. Separate items with a comma.</label>
 			      	</div>
 		      	</div>
 		      	<div className="row">
