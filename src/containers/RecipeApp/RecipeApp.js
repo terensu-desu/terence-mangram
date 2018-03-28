@@ -64,8 +64,8 @@ const mapDispatchToProps = dispatch => {
 		addLocalRecipe: (recipe) => {
 			dispatch(actions.addLocalRecipe(recipe));
 		},
-		editRecipe: (id, propName, value) => {
-			dispatch(actions.editRecipe(id, propName, value));
+		editRecipe: (id, updatedInfo) => {
+			dispatch(actions.editRecipe(id, updatedInfo));
 		},
 		setRetrievedState: () => dispatch(actions.setRetrievedState()),
 		removeRecipe: id => dispatch(actions.removeRecipe(id))
