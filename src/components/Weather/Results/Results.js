@@ -5,7 +5,7 @@ import Clear from "../../../assets/images/weather/Clear.jpg";
 import Rain from "../../../assets/images/weather/Rain.jpg";
 import Snow from "../../../assets/images/weather/Snow.jpg";
 import Haze from "../../../assets/images/weather/Haze.jpg";
-import Thunderstorm from "../../../assets/images/weather/Thunderstorm.jpg";
+//import Thunderstorm from "../../../assets/images/weather/Thunderstorm.jpg";
 
 const results = (props) => {
 	const weatherData = props.weatherData;
@@ -36,9 +36,9 @@ const results = (props) => {
 		case "Haze":
 			image = Haze;
 			break;
-		case "Thunderstorm":
+		/*case "Thunderstorm":
 			image = Thunderstorm;
-			break;
+			break;*/
 		default:
 			break;
 	}
