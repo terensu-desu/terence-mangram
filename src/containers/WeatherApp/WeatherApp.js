@@ -12,7 +12,7 @@ class WeatherApp extends Component {
 		this.getWeatherData();
 	}
 
-	// using navigator.geolocation, get position, request data from FreeCodeCamp Weather API and set it to state and remove loading state
+	//using navigator.geolocation, get position, request data from FreeCodeCamp Weather API and set it to state and remove loading state
 	getWeatherData = () => {
 		if(navigator.geolocation) {
 			navigator.geolocation.getCurrentPosition(position => {
