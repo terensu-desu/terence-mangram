@@ -51,15 +51,18 @@ const wiki = (props) => {
 						      See Results
 						    </label>
 						  </div>
-							<div className="input-field col s8">
+							<div className="input-field col s12 m10">
 								<i className="material-icons prefix">search</i>
 								<input name="query" type="text" />
 								<label htmlFor="search-field">Search</label>
 							</div>
-							<div className="col s4 center">
+							<div className="col m2 center hide-on-small-only">
 								<br/>
 								<button className="btn app-btn" type="submit">Search</button>
 							</div>
+						</div>
+						<div className="row center show-on-small hide-on-med-and-up">
+							<button className="btn app-btn" type="submit">Search</button>
 						</div>
 					</form>
 				</div>
