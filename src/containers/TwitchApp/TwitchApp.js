@@ -61,7 +61,7 @@ class TwitchApp extends Component {
 		}
 		setTimeout(() => {
 			this.setState({ loading: false });
-		}, 1500);
+		}, 2000);
 	};
 
 	render() {
