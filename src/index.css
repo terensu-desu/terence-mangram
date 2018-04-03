@@ -211,6 +211,11 @@ table.bordered>tbody>tr:last-child {
   margin: 100px 0;
 }
 
+.wiki-space {
+  max-height: 650px;
+  overflow: scroll;
+}
+
 /* TWITCHAPP STYLING */
 .user-logo {
   height: 100px;
