@@ -5,7 +5,7 @@ import "./Calculator.css";
 const calculator = props => {
 	return (
 		<FadeTransition>
-			<div id="main-container">
+			<div id="main-container" className="col s12 l6">
 				<br/>
 				<div id="display-container">
 					<input id="display" type="text" disabled value={props.display.join("")} />
