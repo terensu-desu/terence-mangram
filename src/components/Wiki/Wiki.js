@@ -1,5 +1,4 @@
 import React from 'react';
-import axios from "axios";
 import Loading from "../Loading/Loading";
 
 const wiki = (props) => {
@@ -13,15 +12,8 @@ const wiki = (props) => {
 	if(props.loading) {
 		results = <Loading />
 	}
-	let dataHolder = null;
-	if(props.searchResults) {
-		const pageAPIurl = "https://en.wikipedia.org/w/api.php?action=parse&format=json&uselang=user&utf8=1&pageid=";
-		axios.get(pageAPIurl + props.pageId).then(res => {
-			results = res.data;
-		}).catch(err => {
-			console.log(err);
-		})
-		dataHolder = props.searchResults.map((item, i) => (
+	if(props.searchResults && !props.feelingLucky) {
+		results = props.searchResults.map((item, i) => (
 			<div className="row no-margin-bot" key={i}>
 				<div className="col s4">
 					<h5 className="no-margin-bot"><span>{item.title}</span></h5>
@@ -34,18 +26,15 @@ const wiki = (props) => {
 			</div>
 		));
 	}
-	let newResults = null;
-	if(!props.feelingLucky) {
-		// set newResults to the data in reserve
-		newResults = dataHolder;
-		// set the data in reserve to be what was the displayed result
-		dataHolder = results;
-		// set the displayed result to newResults, reflecting user choice
-		results = newResults;
+	if(props.luckyData && props.feelingLucky) {
+		results = (
+			<div dangerouslySetInnerHTML={ {__html: props.luckyData} }>
+			</div>
+		);
 	}
 	return (
-		<div className="col s12 l6">
-			<div className="card-panel z-depth-2">
+		<div className="col l12">
+			<div className="card-panel z-depth-2 wiki-space">
 				<div className="row">
 					<div className="col s12 center">
 						<h4 className="no-margin-top no-margin-bot accent">Wikipedia Search</h4>
