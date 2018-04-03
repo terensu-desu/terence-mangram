@@ -8,7 +8,8 @@ class WikiApp extends Component {
 		searchResults: null,
 		pageId: null,
 		loading: false,
-		feelingLucky: true
+		feelingLucky: true,
+		luckyData: null
 	};
 
 	// get search query and request data from Wiki API and set it to state
@@ -22,18 +23,33 @@ class WikiApp extends Component {
 			method: "get",
 			url: baseURL + userQuery
 		})
-			.then(response => {
-				const results = response.data.query.pages;
+			.then(res => {
+				const results = res.data.query.pages;
 				const resultsArray = Object.keys(results).map(key => results[key]);
 				this.setState({
 					searchResults: resultsArray,
 					pageId: resultsArray[0].pageid,
 					loading: false
 				});
+				this.getPageData(resultsArray[0].pageid);
 			})
-			.catch(error => {
-				console.log(error);
+			.catch(err => {
+				console.log(err);
 			});
+	};
+
+	getPageData = (pageId) => {
+		this.setState({ loading: true });
+		const pageAPIurl = "https://en.wikipedia.org/w/api.php?action=parse&format=json&origin=*&uselang=user&utf8=1&pageid=";
+		axios.get(pageAPIurl + pageId).then(res => {
+				const luckyData = res.data.parse.text["*"];
+				this.setState({
+					luckyData: luckyData,
+					loading: false
+				});
+			}).catch(err => {
+				console.log(err);
+			})
 	};
 
 	toggleSearch = () => {
@@ -55,6 +71,7 @@ class WikiApp extends Component {
 					loading={this.state.loading}
 					feelingLucky={this.state.feelingLucky}
 					toggleSearch={this.toggleSearch}
+					luckyData={this.state.luckyData}
 				/>
 			</FadeTransition>
 		);
