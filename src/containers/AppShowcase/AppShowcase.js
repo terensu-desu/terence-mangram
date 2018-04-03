@@ -27,22 +27,22 @@ class AppShowcase extends Component {
 		let showcase = (
 			<Aux>
 				<RecipeApp />
-				<WikiApp />
+				<WeatherApp />
 			</Aux>
 		);
 		if(this.state.page === 2) {
-			showcase = (
-				<Aux>
-					<WeatherApp />
-					<LeaderboardApp />
-				</Aux>
-			);
+			showcase = <WikiApp />;
 		}
 		if(this.state.page === 3) {
 			showcase = <TwitchApp />;
 		}
 		if(this.state.page === 4) {
-			showcase = <CalculatorApp />;
+			showcase = (
+				<Aux>
+					<LeaderboardApp />
+					<CalculatorApp />
+				</Aux>
+			);
 		}
 		let nextBtnClass = "btn app-btn";
 		let backBtnClass = "btn app-btn";
