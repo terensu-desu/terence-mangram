@@ -1,11 +1,11 @@
 const DisplayDataModule = () => {
 	const store = {
 		english: {
-      about: `I'm Terence Mangram, developer, world-traveler, lifetime-learner. An American citizen, born in Spain, raised in Florida, living in Japan, and soon moving to Chicago. My start as a web developer began long ago in junior high school, though I didn't realize it at the time. My friends and I had been really into computers and eventually started fiddling around with creating websites. Fast forward many years and I found myself in Japan with an opportunity to build a website from scratch for my company's public English teacher department.
+      about: `I'm Terence Mangram, developer, world-traveler, lifelong-learner. An American citizen, born in Spain, raised in Florida, I have just moved to Chicago after living and working in Japan for four years. My start as a web developer began long ago in junior high school, though I didn't realize it at the time. My friends and I had been really into computers and eventually started fiddling around with creating websites.
 
-              This first website, called ChubuALT, sparked me to teach myself all the knowledge necessary to be a valuable web developer. Soon after, I spent all my on studying and working on projects. Since then, I've gained strong skills in HTML5, CSS3, ES6, jQuery, React, Redux, and Git & GitHub. I've also added NodeJS, Express, and MongoDB to my arsenal. I love learning, and I strive to learn something new and valuable every single day.
+              Fast forward many years and I found myself in Japan with an opportunity to build a website from scratch for my company's public English teacher department. This first website, called ChubuALT, sparked me to teach myself all the knowledge necessary to be a valuable web developer. Soon after, I spent all my on studying and working on projects. Since then, I've gained strong skills in HTML5, CSS3, ES6, jQuery, React, Redux, and Git & GitHub. I've also added NodeJS, Express, and MongoDB to my arsenal. I love learning, and I strive to learn something new and valuable every single day.
 
-              In April 2018, I'll be moving to Chicago, IL to start my career as a web developer. I am actively looking for employment, so feel free to contact me. I'll be happy to talk shop, expand on my story, chat about Japan, Formula 1, bouldering, tennis, video games, books, or whatever you like!`,
+              I am actively looking for employment in Chicago, IL, so feel free to contact me. I'll be happy to talk shop, expand on my story, chat about Japan, Formula 1, bouldering, tennis, video games, books, or whatever you like!`,
       projects: [
         {
           title: "Nihon ALT",
@@ -30,11 +30,11 @@ const DisplayDataModule = () => {
       ]
     },
     japanese: {
-      about: `I'm Terence Mangram, developer, world-traveler, lifetime-learner. An American citizen, born in Spain, raised in Florida, living in Japan, and soon moving to Chicago. My start as a web developer began long ago in junior high school, though I didn't realize it at the time. My friends and I had been really into computers and eventually started fiddling around with creating websites. Fast forward many years and I found myself in Japan with an opportunity to build a website from scratch for my company's public English teacher department.
+      about: `I'm Terence Mangram, developer, world-traveler, lifelong-learner. An American citizen, born in Spain, raised in Florida, I have just moved to Chicago after living and working in Japan for four years. My start as a web developer began long ago in junior high school, though I didn't realize it at the time. My friends and I had been really into computers and eventually started fiddling around with creating websites.
 
-              This first website, called ChubuALT, sparked me to teach myself all the knowledge necessary to be a valuable web developer. Soon after, I spent all my on studying and working on projects. Since then, I've gained strong skills in HTML5, CSS3, ES6, jQuery, React, Redux, and Git & GitHub. I've also added NodeJS, Express, and MongoDB to my arsenal. I love learning, and I strive to learn something new and valuable every single day.
+              Fast forward many years and I found myself in Japan with an opportunity to build a website from scratch for my company's public English teacher department. This first website, called ChubuALT, sparked me to teach myself all the knowledge necessary to be a valuable web developer. Soon after, I spent all my on studying and working on projects. Since then, I've gained strong skills in HTML5, CSS3, ES6, jQuery, React, Redux, and Git & GitHub. I've also added NodeJS, Express, and MongoDB to my arsenal. I love learning, and I strive to learn something new and valuable every single day.
 
-              In April 2018, I'll be moving to Chicago, IL to start my career as a web developer. I am actively looking for employment, so feel free to contact me. I'll be happy to talk shop, expand on my story, chat about Japan, Formula 1, bouldering, tennis, video games, books, or whatever you like!`,
+              I am actively looking for employment in Chicago, IL, so feel free to contact me. I'll be happy to talk shop, expand on my story, chat about Japan, Formula 1, bouldering, tennis, video games, books, or whatever you like!`,
       projects: [
         {
           title: "Nihon ALT",
