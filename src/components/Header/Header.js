@@ -1,26 +1,62 @@
-import React from 'react';
+import React from "react";
+import "./Header.css";
 
-const header = () => {
+const header = props => {
 	return (
-		<div className="container-fluid">
-			<div className="row center no-margin-bot banner-image">
-				<div className="col s2 offset-s3 hide-on-med-and-down">
-					<img src="https://i.imgur.com/NPqHt2yb.jpg" alt="author" className="author-showcase circle responsive-img z-depth-2" />
+			<div id="header">
+				<div className="profile">
+					<a href="https://www.linkedin.com/in/terence-mangram/">
+						<img
+							className="author-img"
+							src="https://i.imgur.com/NPqHt2yb.jpg"
+							alt="Terence, himself"/>
+					</a>
+					<h1>
+						<strong>I'm Terence Mangram,</strong>
+						<br/>
+						a world-traveled, self-taught web developer
+						<br/>
+						eager to start my career in Chicago.
+					</h1>
 				</div>
-				<div className="col s4 hide-on-med-and-down">
-					<h1 className="banner-text">Terence Mangram</h1>
-					<h3 className="banner-text">Bilingual Front-End Developer</h3>
+				<div className="navlinks">
+					<ul className="navlist">
+						<li><a href="#about">About</a></li>
+						<li><a href="#projects">Portfolio</a></li>
+						<li><a href="#appshowcase">App Showcase</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#resume">Resume</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
 				</div>
-				<div className="col s12 show-on-small hide-on-large-only">
-					<img src="https://i.imgur.com/NPqHt2yb.jpg" alt="author" className="author-showcase circle responsive-img z-depth-2" />
-				</div>
-				<div className="col s12 show-on-small hide-on-large-only">
-					<h1 className="banner-text">Terence Mangram</h1>
-					<h3 className="banner-text">Bilingual Front-End Developer</h3>
+				<div className="footer">
+					<a href="https://www.linkedin.com/in/terence-mangram/">
+            <span className="fa-stack fa-2x">
+              <i className="fa fa-square-o fa-stack-2x"></i>
+              <i className="fa fa-linkedin fa-stack-1x"></i>
+            </span>
+          </a>
+          <a href="https://github.com/terensu-desu">
+            <span className="fa-stack fa-2x">
+              <i className="fa fa-square-o fa-stack-2x"></i>
+              <i className="fa fa-github fa-stack-1x"></i>
+            </span>
+          </a>
+          <a href="https://codepen.io/terensu-desu/">
+            <span className="fa-stack fa-2x">
+              <i className="fa fa-square-o fa-stack-2x"></i>
+              <i className="fa fa-codepen fa-stack-1x"></i>
+            </span>
+          </a>
+          <a href="https://www.flickr.com/photos/mynomadmind/">
+            <span className="fa-stack fa-2x">
+              <i className="fa fa-square-o fa-stack-2x"></i>
+              <i className="fa fa-flickr fa-stack-1x"></i>
+            </span>
+          </a>
 				</div>
 			</div>
-		</div>
-	)
-}
+	);
+};
 
 export default header;

@@ -1,0 +1,75 @@
+#header {
+	padding: 8em 4em;
+	position: fixed;
+	width: 35%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	align-items: flex-end;
+	background-color: #1f1815;
+	background-attachment: scroll fixed;
+	background-image: url("https://i.imgur.com/zbaAor9.jpg");
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-position: left 70%;
+	text-align: right;
+}
+
+.profile {
+	margin: 0 0 2em 0;
+	flex-grow: 1;
+}
+
+.profile img {
+	margin: 0 0 1em 0;
+	width: 9.25em;
+}
+
+.author-img {
+	border-radius: 100%;
+}
+
+.profile h1 {
+	font-size: 1.8em;
+	line-height: 1.75em;
+	margin: 0;
+	color: #fff;
+	text-shadow: .5px .5px #000;
+}
+.profile strong {
+	color: #FBB829;
+	font-weight: 400;
+}
+
+.navlinks {
+	margin: 0 0 2em 0;
+	flex-grow: 1;
+}
+
+.navlist li a {
+	color: #fff;
+	text-shadow: .5px .5px #000;
+	font-size: 1.6em;
+}
+
+#header .footer {
+	margin: 2em 0 0 0; 
+}
+
+@media screen and (max-width: 992px) {
+	#header {
+    background-attachment: scroll;
+    background-position: top left, center center;
+    background-size: auto,	cover;
+    left: auto;
+    padding: 6em 4em;
+    position: relative;
+    text-align: center;
+    top: auto;
+    width: 100%;
+    display: block;
+  }
+}
