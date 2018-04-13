@@ -14,7 +14,7 @@
 	background-image: url("https://i.imgur.com/zbaAor9.jpg");
 	background-repeat: no-repeat;
 	background-size: auto 100%;
-	background-position: left 70%;
+	background-position: left 75%;
 	text-align: right;
 }
 
@@ -25,7 +25,7 @@
 
 .profile img {
 	margin: 0 0 1em 0;
-	width: 9.25em;
+	width: 12em;
 }
 
 .author-img {
@@ -41,7 +41,7 @@
 }
 .profile strong {
 	color: #FBB829;
-	font-weight: 400;
+	font-weight: 600;
 }
 
 .navlinks {
@@ -52,7 +52,7 @@
 .navlist li a {
 	color: #fff;
 	text-shadow: .5px .5px #000;
-	font-size: 1.6em;
+	font-size: 1.7em;
 }
 
 #header .footer {
