@@ -19,13 +19,13 @@
 }
 
 .profile {
-	margin: 0 0 2em 0;
+	margin: 0;
 	flex-grow: 1;
 }
 
 .profile img {
-	margin: 0 0 1em 0;
-	width: 12em;
+	margin: 0;
+	width: 10em;
 }
 
 .author-img {
@@ -45,7 +45,7 @@
 }
 
 .navlinks {
-	margin: 0 0 1em 0;
+	margin: 0;
 	flex-grow: 1;
 }
 
@@ -68,4 +68,9 @@
     width: 100%;
     display: block;
   }
+}
+
+.footer h4 {
+	color: #fff;
+	text-shadow: .5px .5px #000;
 }

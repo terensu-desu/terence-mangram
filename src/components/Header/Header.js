@@ -20,6 +20,7 @@ const header = props => {
 					</h1>
 				</div>
 				<div className="navlinks">
+					<div className="divider"></div>
 					<ul className="navlist">
 						<li><a href="#about">About</a></li>
 						<li><a href="#projects">Portfolio</a></li>
@@ -27,8 +28,10 @@ const header = props => {
 						<li><a href="#skills">Skills</a></li>
 						<li><a href="#resume">Resume</a></li>
 					</ul>
+					<div className="divider"></div>
 				</div>
 				<div className="footer">
+					<h4>Contact me:</h4>
 					<a href="mailto:tmangram@gmail.com">
             <span className="fa-stack fa-2x">
               <i className="fa fa-square-o fa-stack-2x"></i>
