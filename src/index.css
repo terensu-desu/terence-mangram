@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Didact Gothic", "Century Gothic", sans-sarif;
+  font-family: "Source Sans Pro", "Century Gothic", sans-sarif;
   background-color: #f5f5f5;
 }
 
@@ -20,7 +20,7 @@ a:hover {
 }
 
 p {
-  font-size: 1.1rem
+  font-size: 1.3rem
 }
 
 #main {
