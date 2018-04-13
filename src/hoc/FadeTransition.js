@@ -7,7 +7,7 @@ const fadeTransition = props => (
 	component={Aux}
   transitionName="fade"
   transitionAppear={true}
-  transitionAppearTimeout={1000}
+  transitionAppearTimeout={1500}
   transitionEnter={false}
   transitionLeave={false}>
 	  {props.children}
