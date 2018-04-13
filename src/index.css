@@ -74,8 +74,15 @@ p {
   border-radius: 8px 8px 0 0;
 }
 
+.card-title {
+  font-size: 2em !important;
+  font-weight: 600 !important;
+}
+
 .card-action:last-child {
   border-radius: 0 0 8px 8px !important;
+  font-size: 1.2em;
+  font-weight: 600;
 }
 
 /* ABOUT STYLING */
@@ -124,11 +131,16 @@ blockquote {
 /* SKILLS STYLING */
 .icon-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
+  align-content: center;
+  align-items: center;
 }
 
-.icon-list li {
-  font-size: 5em;
+.icon-list li img {
+  margin: 0 auto;
+  max-height: 5em;
+  max-width: 6em;
 }
 
 /* CSSTransitions STYLING */
@@ -138,7 +150,7 @@ blockquote {
 
 .fade-appear.fade-appear-active {
   opacity: 1;
-  transition: opacity 2000ms;
+  transition: opacity 1500ms;
 }
 
 /* FORMS STYLING */
