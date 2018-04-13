@@ -1,48 +1,46 @@
-import React from 'react';
+import React, { Component } from 'react';
+import M from "materialize-css";
 import DisplayDataModule from "../../store/displayData/displayData";
 
-const about = (props) => {
-	const about = DisplayDataModule.getDisplayData(props.language, "about");
-	return (
-		<div className="section">
-			<div className="card-container">
-				<div className="card-panel">
-					<div className="row no no-margin-bot">
-						<div className="col s12 l3 center bio">
-							<h3 className="no-margin-top"><span>Bio</span></h3>
-							<a href="https://www.linkedin.com/in/terence-mangram/">
-	              <span className="fa-stack fa-2x">
-	                <i className="fa fa-square-o fa-stack-2x"></i>
-	                <i className="fa fa-linkedin fa-stack-1x"></i>
-	              </span>
-	            </a>
-	            <a href="https://github.com/terensu-desu">
-	              <span className="fa-stack fa-2x">
-	                <i className="fa fa-square-o fa-stack-2x"></i>
-	                <i className="fa fa-github fa-stack-1x"></i>
-	              </span>
-	            </a>
-	            <a href="https://codepen.io/terensu-desu/">
-	              <span className="fa-stack fa-2x">
-	                <i className="fa fa-square-o fa-stack-2x"></i>
-	                <i className="fa fa-codepen fa-stack-1x"></i>
-	              </span>
-	            </a>
-	            <a href="https://www.flickr.com/photos/mynomadmind/">
-	              <span className="fa-stack fa-2x">
-	                <i className="fa fa-square-o fa-stack-2x"></i>
-	                <i className="fa fa-flickr fa-stack-1x"></i>
-	              </span>
-	            </a>
+class About extends Component {
+	componentDidMount() {
+		M.ScrollSpy.init(this.about, {scrollOffset: 50});
+	}
+	render() {
+		const about = DisplayDataModule.getDisplayData(this.props.language, "about");
+		return (
+			<div
+			id="about"
+			className="section scrollspy"
+			ref={about => {this.about = about}}>
+				<div className="card-container">
+					<div className="row no-margin-top no-margin-bot">
+		        <div className="col s12">
+		          <h3 className="center no-margin-top no-margin-bot">
+		            <span>About Me</span>
+		          </h3>
+		        </div>
+		      </div>
+		      <hr/>
+					<div className="card-panel">
+						<div className="row no-margin-bot center">
+							<blockquote>
+								In all things big or small,
+							</blockquote>
+							<blockquote>
+								do them well, or not at all.
+							</blockquote>
 						</div>
-						<div className="col s12 l9">
-							<p className="article">{about}</p>
+						<div className="row no-margin-bot">
+							<div className="col s12">
+								<p className="article">{about}</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	);
+		);
+	}
 };
 
-export default about;
+export default About;
