@@ -1,59 +1,72 @@
+import Buddies from "../../assets/images/projects/BuddiesV2.png";
+import BurgerBuilder from "../../assets/images/projects/BurgerBuilder.png";
+
 const DisplayDataModule = () => {
 	const store = {
 		english: {
-      about: `I'm Terence Mangram, developer, world-traveler, lifelong-learner. An American citizen, born in Spain, raised in Florida, I have just moved to Chicago after living and working in Japan for four years. My start as a web developer began long ago in junior high school, though I didn't realize it at the time. My friends and I had been really into computers and eventually started fiddling around with creating websites.
+      about: `Born in Spain and raised in Florida, I've just moved to Chicago (April 5th!) after living and working in Japan as a public school English teacher for four years. My journey as a web developer actually ignited while I was still a teacher.
 
-              Fast forward many years and I found myself in Japan with an opportunity to build a website from scratch for my company's public English teacher department. This first website, called ChubuALT, sparked me to teach myself all the knowledge necessary to be a valuable web developer. Soon after, I spent all my on studying and working on projects. Since then, I've gained strong skills in HTML5, CSS3, ES6, jQuery, React, Redux, and Git & GitHub. I've also added NodeJS, Express, and MongoDB to my arsenal. I love learning, and I strive to learn something new and valuable every single day.
+              The first website I created was Chubu ALT, a solution to the problem English teachers have with creating or finding new material to teach with. Although it started with copy and pasted HTML and CSS, I was really proud of what I accomplished. Eventually it would evolve into Nihon ALT - a React based app with a lot more functionality.
 
-              I am actively looking for employment in Chicago, IL, so feel free to contact me. I'll be happy to talk shop, expand on my story, chat about Japan, Formula 1, bouldering, tennis, video games, books, or whatever you like!`,
+              So after all that, I became a student again. From that point on, I've been building fun and challenging projects and try to solve problems I imagine or have had. I've learned a lot, from HTML5, CSS5, and JavaScript to React and Redux to NodeJS and MongoDB, and more.
+
+              I am actively looking for employment in Chicago, so feel free to contact me! I'd be happy to talk shop, expand on my story, chat about Japan, the language, Formula 1, bouldering, tennis, video games, books, or whatever you like! I'm also active in the local freeCodeCamp group.`,
       projects: [
         {
           title: "Nihon ALT",
+          tools: "Made with React, React Router, and MateralizeCSS.",
           text: "In 2016, I was asked to maintain an online forum where our teaching material was held. I found that the forum approach was completely lacking and a waste of money. I built a completely new website from scratch designed for a better user experience and easier maintenence.",
           vlink: "https://www.youtube.com/embed/Iw0sih9mGv8?ecver=2",
           url: "https://terensu-desu.github.io/nihon-alt/"
         },
         {
           title: "Buddies",
+          tools: "Made with NodeJS, Express, Mongoose, MongoDB, and MateralizeCSS.",
           text: "With two friends of mine at Nagoya University, we embarked on a project to demonstrate the need for a website business aimed at helping foreigners in Japan. Inspired by AirBnB and our experiences of living in foreign countries, we dream of launching a website that can enable others to do more in Japan.",
           vlink: null,
-          ilink: "https://i.imgur.com/3UwgmHx.jpg",
+          ilink: Buddies,
           url: "https://agile-scrubland-23791.herokuapp.com/"
         },
         {
           title: "Burger Builder",
-          text: "Built using React, React Router, Redux, and Thunk for asyncronous Redux use, this fun little app is an example of my experience with the latest React best practices and implementation. Users can create an account, login, build a burger, order it, see their order history, and even build a burger while not logged in (and be prompted to log in to order).",
+          tools: "Made with React, React Router, Redux, and Thunk.",
+          text: "This fun little app is an example of my experience with the latest React best practices and implementation. Users can create an account, login, build a burger, order it, see their order history, and even build a burger while not logged in (and be prompted to log in to order).",
           vlink: null,
-          ilink: "https://i.imgur.com/f4nvj5k.png",
+          ilink: BurgerBuilder,
           url: "https://burger-builder-ef58a.firebaseapp.com/",
         }
       ]
     },
     japanese: {
-      about: `I'm Terence Mangram, developer, world-traveler, lifelong-learner. An American citizen, born in Spain, raised in Florida, I have just moved to Chicago after living and working in Japan for four years. My start as a web developer began long ago in junior high school, though I didn't realize it at the time. My friends and I had been really into computers and eventually started fiddling around with creating websites.
+      about: `Born in Spain and raised in Florida, I've just moved to Chicago (April 5th!) after living and working in Japan as a public school English teacher for four years. My journey as a web developer actually ignited while I was still a teacher.
 
-              Fast forward many years and I found myself in Japan with an opportunity to build a website from scratch for my company's public English teacher department. This first website, called ChubuALT, sparked me to teach myself all the knowledge necessary to be a valuable web developer. Soon after, I spent all my on studying and working on projects. Since then, I've gained strong skills in HTML5, CSS3, ES6, jQuery, React, Redux, and Git & GitHub. I've also added NodeJS, Express, and MongoDB to my arsenal. I love learning, and I strive to learn something new and valuable every single day.
+              The first website I created was Chubu ALT, a solution to the problem English teachers have with creating or finding new material to teach with. Although it started with copy and pasted HTML and CSS, I was really proud of what I accomplished. Eventually it would evolve into Nihon ALT - a React based app with a lot more functionality.
 
-              I am actively looking for employment in Chicago, IL, so feel free to contact me. I'll be happy to talk shop, expand on my story, chat about Japan, Formula 1, bouldering, tennis, video games, books, or whatever you like!`,
+              So after all that, I became a student again. From that point on, I've been building fun and challenging projects and try to solve problems I imagine or have had. I've learned a lot, from HTML5, CSS5, and JavaScript to React and Redux to NodeJS and MongoDB, and more.
+
+              I am actively looking for employment in Chicago, so feel free to contact me! I'd be happy to talk shop, expand on my story, chat about Japan, the language, Formula 1, bouldering, tennis, video games, books, or whatever you like! I'm also active in the local freeCodeCamp group.`,
       projects: [
         {
           title: "Nihon ALT",
+          tools: "React, React Router, と MateralizeCSSで作りました.",
           text: "２０１６年に、資料を溜めたネットフォラムーを維持するのようにできました。でも、そのフォラムーは不充分と思いました。UXはあまり良くなかったです。その上、私たちはとてもシンプルなフォラムーを払っていました。そしていいUXに図った新いサイトを作りました。このサイトは私の一番最初のサイトです。とりあえず型を使いましたが、後すぐ私のコードといろいろなライブラリーを使いました。",
           vlink: "https://www.youtube.com/embed/Iw0sih9mGv8?ecver=2",
           url: "https://terensu-desu.github.io/nihon-alt/"
         },
         {
           title: "Buddies",
+          tools: "NodeJS, Express, Mongoose, MongoDB, と MateralizeCSSで作りました.",
           text: "「Buddies」は外国人が日本に住んでいやすい助けるのためにプロジェクトです。このプロジェクトはP2Pサービズから人々はサポートかお客様を探せます。「Buddies」のメンバーはお客様に彼らの技能をあげられます。「Buddies」のお客様はサービスとサポートを頼めます。",
           vlink: null,
-          ilink: "https://i.imgur.com/3UwgmHx.jpg",
+          ilink: Buddies,
           url: "https://agile-scrubland-23791.herokuapp.com/"
         },
         {
           title: "Burger Builder",
-          text: "React, React Router, Redux, と Thunkで作りました、この楽しいアプリはReactとReduxで私の理解を見せます。ユーザは新規登録したり、ログインしたり、バーガーを作ったり、注文をしたり、注文の歴史を見れます。",
+          tools: "React, React Router, Redux, と Thunkで作りました.",
+          text: "この楽しいアプリはReactとReduxで私の理解を見せます。ユーザは新規登録したり、ログインしたり、バーガーを作ったり、注文をしたり、注文の歴史を見れます。",
           vlink: null,
-          ilink: "https://i.imgur.com/f4nvj5k.png",
+          ilink: BurgerBuilder,
           url: "https://burger-builder-ef58a.firebaseapp.com/",
         }
       ]
