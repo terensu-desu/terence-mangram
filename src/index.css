@@ -23,6 +23,19 @@ p {
   font-size: 1.1rem
 }
 
+#main {
+  margin-left: 35%;
+  padding: 3em 0;
+  width: calc(100% - 35%);
+}
+
+@media screen and (max-width: 980px) {
+  #main {
+    margin: 0;
+    width: 100%;
+  }
+}
+
 .col a {
   margin-top: 10px;
 }
@@ -65,22 +78,16 @@ p {
   border-radius: 0 0 8px 8px !important;
 }
 
-/* BANNER STYLING */
-.banner-image {
-	background: url(https://i.imgur.com/uVWqdcS.jpg) no-repeat 65% 55%;
-}
-
-.author-showcase {
-	margin-top: 10px;
-}
-
-.banner-text {
-	color: white;
-  margin-top: 10px;
-  text-shadow: -5px 5px 8px #000;
-}
-
 /* ABOUT STYLING */
+
+blockquote {
+  border-left: 5px solid #FBB829;
+  margin: 0 20%;
+  font-family: 'Cherry Swash', cursive;
+  font-size: 1.7rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
 @media screen and (min-width: 992px) {
   .bio {
     margin-top: 5vh;
@@ -89,11 +96,13 @@ p {
 
 .article {
 	white-space: pre-line;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 .fa {
-	color: #990012;
+	/* color: #990012; */
+  color: #fff;
+  text-shadow: 1px 1px #000;
 	transition: .5s;
 }
 
@@ -102,20 +111,18 @@ p {
 }
 
 /* APPSHOWCASE STYLING */
-  #app-showcase {
-    height: 63vh;
-  }
-
-/* FOOTER STYLING */
-.footer {
-  margin: 0 auto;
-  width: 600px;
+#appshowcase {
+  max-height: 75vh;
 }
 
 .app-btn {
-	background-color: #990012 !important;
-	-webkit-appearance: none;
+  background-color: #990012 !important;
+  -webkit-appearance: none;
   transition: .5s;
+}
+
+/* FOOTER STYLING */
+.footer {
 }
 
 /* CSSTransitions STYLING */
@@ -202,8 +209,16 @@ table.bordered>tbody>tr:last-child {
 }
 
 /* RECIPEAPP STYLING */
+.collapsible-header {
+  font-size: 1.4rem;
+}
+
 .recipe-body {
   color: black !important;
+}
+
+.recipe-body ul li {
+  font-size: 1.1rem;
 }
 
 /* WIKIAPP STYLING */
