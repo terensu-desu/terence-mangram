@@ -16,7 +16,7 @@ const weather = props => {
 	}
 	return (
 		<FadeTransition>
-			<div className="col s12 l6">
+			<div className="col s12">
 				{weatherView}
 			</div>
 		</FadeTransition>

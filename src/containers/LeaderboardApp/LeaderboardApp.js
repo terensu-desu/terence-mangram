@@ -46,7 +46,7 @@ class LeaderboardApp extends Component {
 	render() {
 		return (
 			<FadeTransition>
-				<div className="col s12 l6 center">
+				<div className="col s12 center">
 					<Leaderboard
 						recent={this.state.recent}
 						allTime={this.state.allTime}

@@ -33,7 +33,7 @@ const wiki = (props) => {
 		);
 	}
 	return (
-		<div className="col l12">
+		<div className="col s12">
 			<div className="card-panel z-depth-2 wiki-space">
 				<div className="row">
 					<div className="col s12 center">

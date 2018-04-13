@@ -5,7 +5,7 @@ import "./Calculator.css";
 const calculator = props => {
 	return (
 		<FadeTransition>
-			<div className="col s12 l6">
+			<div className="col s12">
 				<div id="main-container">
 					<br/>
 					<div id="display-container">

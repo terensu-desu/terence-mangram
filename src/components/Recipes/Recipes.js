@@ -116,7 +116,7 @@ class Recipes extends Component {
 		));
 		return (
 			<FadeTransition>
-				<div className="col s12 l6">
+				<div className="col s12">
 					<h4 className="center app-title no-margin-top z-depth-2">Recipe List Redux</h4>
 					<ul 
 					ref={collapsible => {this.collapsible = collapsible}}
