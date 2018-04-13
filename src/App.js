@@ -30,10 +30,12 @@ class App extends Component {
 		return (
 			<div className="container-fluid">
 				<Header />
-				<About language={this.state.language} />
-				<AppShowcase />
-				<Projects language={this.state.language} />
-				<Footer />
+				<div id="main">
+					<About language={this.state.language} />
+					<Projects language={this.state.language} />
+					<AppShowcase />
+					<Footer />
+				</div>
 				<div className="fixed-action-btn">
 					<button
 						ref={tooltipped => {
