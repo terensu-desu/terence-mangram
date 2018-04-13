@@ -3,9 +3,12 @@ import M from "materialize-css";
 
 import Header from "./components/Header/Header";
 import About from "./components/About/About";
-import AppShowcase from "./containers/AppShowcase/AppShowcase";
 import Projects from "./components/Projects/Projects";
+import AppShowcase from "./containers/AppShowcase/AppShowcase";
+import Skills from "./components/Skills/Skills";
+import Resume from "./components/Resume/Resume";
 import Footer from "./components/Footer/Footer";
+import FadeTransition from "./hoc/FadeTransition";
 
 class App extends Component {
 	state = { language: "english" };
@@ -30,12 +33,16 @@ class App extends Component {
 		return (
 			<div className="container-fluid">
 				<Header />
-				<div id="main">
-					<About language={this.state.language} />
-					<Projects language={this.state.language} />
-					<AppShowcase />
-					<Footer />
-				</div>
+				<FadeTransition>
+					<div id="main">
+						<About language={this.state.language} />
+						<Projects language={this.state.language} />
+						<AppShowcase />
+						<Skills />
+						<Resume />
+						<Footer />
+					</div>
+				</FadeTransition>
 				<div className="fixed-action-btn">
 					<button
 						ref={tooltipped => {
