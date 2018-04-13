@@ -26,10 +26,15 @@ const header = props => {
 						<li><a href="#appshowcase">App Showcase</a></li>
 						<li><a href="#skills">Skills</a></li>
 						<li><a href="#resume">Resume</a></li>
-						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</div>
 				<div className="footer">
+					<a href="mailto:tmangram@gmail.com">
+            <span className="fa-stack fa-2x">
+              <i className="fa fa-square-o fa-stack-2x"></i>
+              <i className="fa fa-envelope-o fa-stack-1x"></i>
+            </span>
+          </a>
 					<a href="https://www.linkedin.com/in/terence-mangram/">
             <span className="fa-stack fa-2x">
               <i className="fa fa-square-o fa-stack-2x"></i>
@@ -46,6 +51,12 @@ const header = props => {
             <span className="fa-stack fa-2x">
               <i className="fa fa-square-o fa-stack-2x"></i>
               <i className="fa fa-codepen fa-stack-1x"></i>
+            </span>
+          </a>
+          <a href="https://twitter.com/TMangram">
+            <span className="fa-stack fa-2x">
+              <i className="fa fa-square-o fa-stack-2x"></i>
+              <i className="fa fa-twitter fa-stack-1x"></i>
             </span>
           </a>
           <a href="https://www.flickr.com/photos/mynomadmind/">

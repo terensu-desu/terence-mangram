@@ -1,5 +1,5 @@
 #header {
-	padding: 8em 4em;
+	padding: 5em 4em;
 	position: fixed;
 	width: 35%;
 	height: 100%;
@@ -45,7 +45,7 @@
 }
 
 .navlinks {
-	margin: 0 0 2em 0;
+	margin: 0 0 1em 0;
 	flex-grow: 1;
 }
 
@@ -53,10 +53,6 @@
 	color: #fff;
 	text-shadow: .5px .5px #000;
 	font-size: 1.7em;
-}
-
-#header .footer {
-	margin: 2em 0 0 0; 
 }
 
 @media screen and (max-width: 992px) {
