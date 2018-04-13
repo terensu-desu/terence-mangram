@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.de0bbc27.css",
-  "main.css.map": "static/css/main.de0bbc27.css.map",
-  "main.js": "static/js/main.3df09cbe.js",
-  "main.js.map": "static/js/main.3df09cbe.js.map",
+  "main.css": "static/css/main.20b14c17.css",
+  "main.css.map": "static/css/main.20b14c17.css.map",
+  "main.js": "static/js/main.50addf5b.js",
+  "main.js.map": "static/js/main.50addf5b.js.map",
   "static/media/BuddiesV2.png": "static/media/BuddiesV2.08e75aeb.png",
   "static/media/BurgerBuilder.png": "static/media/BurgerBuilder.29617364.png",
   "static/media/Clear.jpg": "static/media/Clear.f9dc4c8d.jpg",
@@ -11,5 +11,18 @@
   "static/media/Rain.jpg": "static/media/Rain.d313a469.jpg",
   "static/media/ResumeSS.png": "static/media/ResumeSS.3c684eab.png",
   "static/media/Snow.jpg": "static/media/Snow.213d6650.jpg",
-  "static/media/Sunny.jpg": "static/media/Sunny.c56a3cb3.jpg"
+  "static/media/Sunny.jpg": "static/media/Sunny.c56a3cb3.jpg",
+  "static/media/bootstrap.svg": "static/media/bootstrap.71e42b5a.svg",
+  "static/media/express.svg": "static/media/express.53051603.svg",
+  "static/media/git-icon.svg": "static/media/git-icon.64d5e98f.svg",
+  "static/media/github-icon.svg": "static/media/github-icon.0255bf2c.svg",
+  "static/media/heroku.svg": "static/media/heroku.b320b999.svg",
+  "static/media/javascript.svg": "static/media/javascript.87711407.svg",
+  "static/media/jquery.svg": "static/media/jquery.6ff17bd2.svg",
+  "static/media/materializecss.svg": "static/media/materializecss.fe397f2a.svg",
+  "static/media/mongodb.svg": "static/media/mongodb.2aa7f7b5.svg",
+  "static/media/nodejs.svg": "static/media/nodejs.f434bfbb.svg",
+  "static/media/npm.svg": "static/media/npm.dc5e0813.svg",
+  "static/media/react.svg": "static/media/react.9a28da9f.svg",
+  "static/media/redux.svg": "static/media/redux.85772647.svg"
 }
