@@ -1,15 +1,18 @@
 import React, { Component } from "react";
-
+import M from "materialize-css";
 import WeatherApp from "../WeatherApp/WeatherApp";
 import WikiApp from "../WikiApp/WikiApp";
 import LeaderboardApp from "../LeaderboardApp/LeaderboardApp";
 import RecipeApp from "../RecipeApp/RecipeApp";
 import TwitchApp from "../TwitchApp/TwitchApp";
 import CalculatorApp from "../CalculatorApp/CalculatorApp";
-import Aux from "../../hoc/Aux";
 
 class AppShowcase extends Component {
 	state = { page: 1 };
+
+	componentDidMount() {
+    M.ScrollSpy.init(this.appshowcase, {scrollOffset: 50});
+	}
 	
 	advanceShowcasePage = () => {
 		this.setState(prevState => {
@@ -24,12 +27,7 @@ class AppShowcase extends Component {
 	};
 
 	render() {
-		let showcase = (
-			<Aux>
-				<RecipeApp />
-				<WeatherApp />
-			</Aux>
-		);
+		let showcase = <RecipeApp />;
 		if(this.state.page === 2) {
 			showcase = <WikiApp />;
 		}
@@ -37,23 +35,27 @@ class AppShowcase extends Component {
 			showcase = <TwitchApp />;
 		}
 		if(this.state.page === 4) {
-			showcase = (
-				<Aux>
-					<LeaderboardApp />
-					<CalculatorApp />
-				</Aux>
-			);
+			showcase = <LeaderboardApp />;
+		}
+		if(this.state.page === 5) {
+			showcase = <CalculatorApp />;
+		}
+		if(this.state.page === 6) {
+			showcase =  <WeatherApp />;
 		}
 		let nextBtnClass = "btn app-btn";
 		let backBtnClass = "btn app-btn";
-		if(this.state.page === 4) {
+		if(this.state.page === 6) {
 			nextBtnClass = "btn app-btn disabled";
 		}
 		if(this.state.page === 1) {
 			backBtnClass = "btn app-btn disabled";
 		}
 		return (
-			<div className="section">
+			<div
+			id="appshowcase"
+			className="section scrollspy"
+			ref={appshowcase => {this.appshowcase = appshowcase}}>
 				<div className="card-container">
 						<div className="row center no-margin-top no-margin-bot">
 							<div className="col s6 l4 hide-on-med-and-down">
@@ -85,7 +87,7 @@ class AppShowcase extends Component {
 	          	</div>
 	          </div>
 	          <hr/>
-						<div id="app-showcase" className="row">
+						<div className="row">
 			        {showcase}
 						</div>
 				</div>
