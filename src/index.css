@@ -121,8 +121,14 @@ blockquote {
   transition: .5s;
 }
 
-/* FOOTER STYLING */
-.footer {
+/* SKILLS STYLING */
+.icon-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon-list li {
+  font-size: 5em;
 }
 
 /* CSSTransitions STYLING */
@@ -132,7 +138,7 @@ blockquote {
 
 .fade-appear.fade-appear-active {
   opacity: 1;
-  transition: opacity 1000ms;
+  transition: opacity 2000ms;
 }
 
 /* FORMS STYLING */
