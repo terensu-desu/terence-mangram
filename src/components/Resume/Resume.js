@@ -23,7 +23,7 @@ class Resume extends Component {
 		      <hr/>
 		      <div className="card-panel center">
 		      	<div className="row">
-		      		<a href="https://drive.google.com/open?id=1D2qXF85AoEpLhRMOVc5ogzL_po6a5Zbv">
+		      		<a href="https://drive.google.com/open?id=1bFmU0oH8XED4X8dFsXKeYm4iPbt2llnZ">
 		      			<img src={ResumeSS} alt="Resume" style={{height: "400px"}}/>
 		      		</a>
 		      	</div>
