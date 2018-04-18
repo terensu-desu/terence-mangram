@@ -14,7 +14,7 @@ const header = props => {
 					<h1>
 						<strong>I'm Terence Mangram,</strong>
 						<br/>
-						a world-traveled, self-taught web developer
+						a self-taught web developer
 						<br/>
 						eager to start my career in Chicago.
 					</h1>
