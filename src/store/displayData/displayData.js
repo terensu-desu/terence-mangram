@@ -17,14 +17,14 @@ const DisplayDataModule = () => {
           title: "Nihon ALT",
           tools: "Made with React, React Router, and MateralizeCSS.",
           text: "In 2016, I was asked to maintain an online forum where our teaching material was held. I found that the forum approach was completely lacking and a waste of money. I built a completely new website from scratch designed for a better user experience and easier maintenence.",
-          vlink: "https://youtu.be/gTKgvghLx98",
+          vlink: "https://www.youtube.com/embed/gTKgvghLx98",
           url: "https://terensu-desu.github.io/nihon-alt/"
         },
         {
           title: "Buddies",
           tools: "Made with NodeJS, Express, Mongoose, MongoDB, and MateralizeCSS.",
           text: "With two friends of mine at Nagoya University, we embarked on a project to demonstrate the need for a website business aimed at helping foreigners in Japan. Inspired by AirBnB and our experiences and difficulties living in foreign countries, Buddies aims to solve one of the biggest problems of being a foreigner in Japan.",
-          vlink: "https://youtu.be/gu3rACIDd4A",
+          vlink: "https://www.youtube.com/embed/gu3rACIDd4A",
           ilink: Buddies,
           url: "https://agile-scrubland-23791.herokuapp.com/"
         },
@@ -32,7 +32,7 @@ const DisplayDataModule = () => {
           title: "Trello Clone",
           tools: "React, React Router, Redux, Thunk",
           text: "A little challenge to work my Redux skills. This app can authenticate users and allow them to create boards, lists, and list items and modify them. The challenges were with modifying a nested JSON database and using immutable update patterns with the Redux store. It was a great work out!",
-          vlink: "https://youtu.be/fnxOI-NDIsE",
+          vlink: "https://www.youtube.com/embed/fnxOI-NDIsE",
           ilink: TrelloClone,
           url: "https://trello-clone-f42b4.firebaseapp.com/"
         },
@@ -40,7 +40,7 @@ const DisplayDataModule = () => {
           title: "Burger Builder",
           tools: "Made with React, React Router, Redux, and Thunk.",
           text: "This fun little app is an example of my experience with the latest React best practices and implementation. Users can create an account, login, build a burger, order it, see their order history, and even build a burger while not logged in (and be prompted to log in to order).",
-          vlink: "https://youtu.be/00K1s89hUKo",
+          vlink: "https://www.youtube.com/embed/00K1s89hUKo",
           ilink: BurgerBuilder,
           url: "https://burger-builder-ef58a.firebaseapp.com/",
         }
@@ -59,14 +59,14 @@ const DisplayDataModule = () => {
           title: "Nihon ALT",
           tools: "React, React Router, と MateralizeCSSで作りました.",
           text: "２０１６年に、資料を溜めたネットフォラムーを維持するのようにできました。でも、そのフォラムーは不充分と思いました。UXはあまり良くなかったです。その上、私たちはとてもシンプルなフォラムーを払っていました。そしていいUXに図った新いサイトを作りました。このサイトは私の一番最初のサイトです。とりあえず型を使いましたが、後すぐ私のコードといろいろなライブラリーを使いました。",
-          vlink: "https://youtu.be/gTKgvghLx98",
+          vlink: "https://www.youtube.com/embed/gTKgvghLx98",
           url: "https://terensu-desu.github.io/nihon-alt/"
         },
         {
           title: "Buddies",
           tools: "NodeJS, Express, Mongoose, MongoDB, と MateralizeCSSで作りました.",
           text: "「Buddies」は外国人が日本に住んでいやすい助けるのためにプロジェクトです。このプロジェクトはP2Pサービズから人々はサポートかお客様を探せます。「Buddies」のメンバーはお客様に彼らの技能をあげられます。「Buddies」のお客様はサービスとサポートを頼めます。",
-          vlink: "https://youtu.be/gu3rACIDd4A",
+          vlink: "https://www.youtube.com/embed/gu3rACIDd4A",
           ilink: Buddies,
           url: "https://agile-scrubland-23791.herokuapp.com/"
         },
@@ -74,7 +74,7 @@ const DisplayDataModule = () => {
           title: "Trello Clone",
           tools: "React, React Router, Redux, Thunk",
           text: "A little challenge to work my Redux skills. This app can authenticate users and allow them to create boards, lists, and list items and modify them. The challenges were with modifying a nested JSON database and using immutable update patterns with the Redux store. It was a great work out!",
-          vlink: "https://youtu.be/fnxOI-NDIsE",
+          vlink: "https://www.youtube.com/embed/fnxOI-NDIsE",
           ilink: TrelloClone,
           url: "https://trello-clone-f42b4.firebaseapp.com/"
         },
@@ -82,7 +82,7 @@ const DisplayDataModule = () => {
           title: "Burger Builder",
           tools: "React, React Router, Redux, と Thunkで作りました.",
           text: "この楽しいアプリはReactとReduxで私の理解を見せます。ユーザは新規登録したり、ログインしたり、バーガーを作ったり、注文をしたり、注文の歴史を見れます。",
-          vlink: "https://youtu.be/00K1s89hUKo",
+          vlink: "https://www.youtube.com/embed/00K1s89hUKo",
           ilink: BurgerBuilder,
           url: "https://burger-builder-ef58a.firebaseapp.com/",
         }
