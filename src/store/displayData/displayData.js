@@ -1,5 +1,6 @@
 import Buddies from "../../assets/images/projects/BuddiesV2.png";
 import BurgerBuilder from "../../assets/images/projects/BurgerBuilder.png";
+import TrelloClone from "../../assets/images/projects/TrelloClone.png";
 
 const DisplayDataModule = () => {
 	const store = {
@@ -34,6 +35,14 @@ const DisplayDataModule = () => {
           vlink: null,
           ilink: BurgerBuilder,
           url: "https://burger-builder-ef58a.firebaseapp.com/",
+        },
+        {
+          title: "Trello Clone",
+          tools: "React, React Router, Redux, Thunk",
+          text: "A little challenge to work my Redux skills. This app can authenticate users and allow them to create boards, lists, and list items and modify them. The challenges were with modifying a nested JSON database and using immutable update patterns with the Redux store. It was a great work out!",
+          vlink: null,
+          ilink: TrelloClone,
+          url: "https://trello-clone-f42b4.firebaseapp.com/"
         }
       ]
     },
@@ -68,6 +77,14 @@ const DisplayDataModule = () => {
           vlink: null,
           ilink: BurgerBuilder,
           url: "https://burger-builder-ef58a.firebaseapp.com/",
+        },
+        {
+          title: "Trello Clone",
+          tools: "React, React Router, Redux, Thunk",
+          text: "A little challenge to work my Redux skills. This app can authenticate users and allow them to create boards, lists, and list items and modify them. The challenges were with modifying a nested JSON database and using immutable update patterns with the Redux store. It was a great work out!",
+          vlink: null,
+          ilink: TrelloClone,
+          url: "https://trello-clone-f42b4.firebaseapp.com/"
         }
       ]
     }
