@@ -29,20 +29,20 @@ const DisplayDataModule = () => {
           url: "https://agile-scrubland-23791.herokuapp.com/"
         },
         {
-          title: "Burger Builder",
-          tools: "Made with React, React Router, Redux, and Thunk.",
-          text: "This fun little app is an example of my experience with the latest React best practices and implementation. Users can create an account, login, build a burger, order it, see their order history, and even build a burger while not logged in (and be prompted to log in to order).",
-          vlink: null,
-          ilink: BurgerBuilder,
-          url: "https://burger-builder-ef58a.firebaseapp.com/",
-        },
-        {
           title: "Trello Clone",
           tools: "React, React Router, Redux, Thunk",
           text: "A little challenge to work my Redux skills. This app can authenticate users and allow them to create boards, lists, and list items and modify them. The challenges were with modifying a nested JSON database and using immutable update patterns with the Redux store. It was a great work out!",
           vlink: null,
           ilink: TrelloClone,
           url: "https://trello-clone-f42b4.firebaseapp.com/"
+        },
+        {
+          title: "Burger Builder",
+          tools: "Made with React, React Router, Redux, and Thunk.",
+          text: "This fun little app is an example of my experience with the latest React best practices and implementation. Users can create an account, login, build a burger, order it, see their order history, and even build a burger while not logged in (and be prompted to log in to order).",
+          vlink: null,
+          ilink: BurgerBuilder,
+          url: "https://burger-builder-ef58a.firebaseapp.com/",
         }
       ]
     },
@@ -71,20 +71,20 @@ const DisplayDataModule = () => {
           url: "https://agile-scrubland-23791.herokuapp.com/"
         },
         {
-          title: "Burger Builder",
-          tools: "React, React Router, Redux, と Thunkで作りました.",
-          text: "この楽しいアプリはReactとReduxで私の理解を見せます。ユーザは新規登録したり、ログインしたり、バーガーを作ったり、注文をしたり、注文の歴史を見れます。",
-          vlink: null,
-          ilink: BurgerBuilder,
-          url: "https://burger-builder-ef58a.firebaseapp.com/",
-        },
-        {
           title: "Trello Clone",
           tools: "React, React Router, Redux, Thunk",
           text: "A little challenge to work my Redux skills. This app can authenticate users and allow them to create boards, lists, and list items and modify them. The challenges were with modifying a nested JSON database and using immutable update patterns with the Redux store. It was a great work out!",
           vlink: null,
           ilink: TrelloClone,
           url: "https://trello-clone-f42b4.firebaseapp.com/"
+        },
+        {
+          title: "Burger Builder",
+          tools: "React, React Router, Redux, と Thunkで作りました.",
+          text: "この楽しいアプリはReactとReduxで私の理解を見せます。ユーザは新規登録したり、ログインしたり、バーガーを作ったり、注文をしたり、注文の歴史を見れます。",
+          vlink: null,
+          ilink: BurgerBuilder,
+          url: "https://burger-builder-ef58a.firebaseapp.com/",
         }
       ]
     }
