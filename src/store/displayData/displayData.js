@@ -18,7 +18,7 @@ const DisplayDataModule = () => {
           tools: "Made with React, React Router, and MateralizeCSS.",
           text: "In 2016, I was asked to maintain an online forum where our teaching material was held. I found that the forum approach was completely lacking and a waste of money. I built a completely new website from scratch designed for a better user experience and easier maintenence.",
           vlink: "https://www.youtube.com/embed/gTKgvghLx98",
-          url: "https://terensu-desu.github.io/nihon-alt/"
+          url: "https://nihonalt.herokuapp.com/"
         },
         {
           title: "Buddies",
@@ -26,7 +26,7 @@ const DisplayDataModule = () => {
           text: "With two friends of mine at Nagoya University, we embarked on a project to demonstrate the need for a website business aimed at helping foreigners in Japan. Inspired by AirBnB and our experiences and difficulties living in foreign countries, Buddies aims to solve one of the biggest problems of being a foreigner in Japan.",
           vlink: "https://www.youtube.com/embed/gu3rACIDd4A",
           ilink: Buddies,
-          url: "https://agile-scrubland-23791.herokuapp.com/"
+          url: "https://buddiesjp.herokuapp.com/"
         },
         {
           title: "Trello Clone",
@@ -60,7 +60,7 @@ const DisplayDataModule = () => {
           tools: "React, React Router, と MateralizeCSSで作りました.",
           text: "２０１６年に、資料を溜めたネットフォラムーを維持するのようにできました。でも、そのフォラムーは不充分と思いました。UXはあまり良くなかったです。その上、私たちはとてもシンプルなフォラムーを払っていました。そしていいUXに図った新いサイトを作りました。このサイトは私の一番最初のサイトです。とりあえず型を使いましたが、後すぐ私のコードといろいろなライブラリーを使いました。",
           vlink: "https://www.youtube.com/embed/gTKgvghLx98",
-          url: "https://terensu-desu.github.io/nihon-alt/"
+          url: "https://nihonalt.herokuapp.com/"
         },
         {
           title: "Buddies",
@@ -68,7 +68,7 @@ const DisplayDataModule = () => {
           text: "「Buddies」は外国人が日本に住んでいやすい助けるのためにプロジェクトです。このプロジェクトはP2Pサービズから人々はサポートかお客様を探せます。「Buddies」のメンバーはお客様に彼らの技能をあげられます。「Buddies」のお客様はサービスとサポートを頼めます。",
           vlink: "https://www.youtube.com/embed/gu3rACIDd4A",
           ilink: Buddies,
-          url: "https://agile-scrubland-23791.herokuapp.com/"
+          url: "https://buddiesjp.herokuapp.com/"
         },
         {
           title: "Trello Clone",
